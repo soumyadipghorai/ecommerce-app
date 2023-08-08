@@ -1,0 +1,34 @@
+{% extends 'base_template.html' %}
+{% block css %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user_login.css') }}">
+{% endblock %}
+{% block title %}
+    <title>Admin Dashboard</title>
+{% endblock %}
+
+{% block body %}
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand">{{admin}}'s, dashboard</a>
+        <form class="d-flex" role="search" method = 'POST'>
+            <input type="hidden" name="form_name" value="logout-form">
+            <a href="/dashboard/{{admin}}" class="btn btn-outline-success mx-3">Summary</a>
+            <button class="btn btn-outline-danger" type="submit">Log out</button>
+        </form>
+        </div>
+    </nav>
+    <div class="dashboard-container mt-5">
+        <div class="contegory-form-container">
+            <h2 class="m-2">Create New category</h2>
+            <form action="/add-category/{{admin}}" method = 'POST' class="m-2">
+                <input type="hidden" name="form_name" value="category-form">
+                <label for="category">Category Name :</label>
+                <input type="text" name="categoryName" id="categoryName" required > 
+                <input type="submit" value="Create" class="btn btn-success">
+                <div class="message mt-2" style="color: red;">
+                    {{message}}
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %} 

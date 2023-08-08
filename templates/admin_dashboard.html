@@ -1,0 +1,59 @@
+{% extends 'base_template.html' %}
+{% block css %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user_login.css') }}">
+    <script>
+        function deleteWarning(){
+            alert('You are trying to delete a category');
+        }
+
+        window.addEventListener('load', function(){
+            const message = {{message|tojson}}; 
+            console.log(message.length);
+            if (message.length > 0){
+                alert(message);
+            }
+        });
+    </script>
+{% endblock %}
+{% block title %}
+    <title>Admin Dashboard</title>
+{% endblock %}
+
+{% block body %}
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand">{{admin}}'s, dashboard</a>
+        <form class="d-flex" role="search" method = 'POST'>
+            <input type="hidden" name="form_name" value="logout-form">
+            <a href="/dashboard/{{admin}}" class="btn btn-outline-success mx-3">Summary</a>
+            <button class="btn btn-outline-danger" type="submit">Log out</button>
+        </form>
+        </div>
+    </nav>
+    <div class="dashboard-container mt-5">
+        {% if catgoryList| length == 0%}
+            <p>No categoey present. Add new category</p>
+        {% else %}
+        <div class="category-card-container" style="display: flex;">
+            {% for category in catgoryList %}
+                <div class="category-container m-3 p-5 border rounded-2">
+                    <form action="" method = 'POST'>
+                        <input type="hidden" name="form_name" value="category-delete-form">
+                        <input type="hidden" name="category" value="{{category}}">
+                        <h4 class="my-2">{{category}}</h4>
+                        <div class="poduct-container">
+                            {% for product in catgoryList[category] %}
+                                <p>{{product}}</p>
+                            {% endfor %}
+                        </div>
+                        <a class="btn btn-outline-warning" href="/add-product/{{admin}}?category={{category}}">Edit</a>
+                        <input onclick="deleteWarning()" class="btn btn-outline-danger mx-2" type="submit" value="Delete" id={{category}}>
+                    </form>
+                </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <a href="/add-category/{{admin}}" class="btn btn-outline-success">Add Category</a>
+    </div>
+{% endblock %} 

@@ -1,0 +1,29 @@
+{% extends 'base_template.html' %}
+{% block css %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user_login.css') }}">
+{% endblock %}
+{% block title %}
+    <title>Admin Login</title>
+{% endblock %}
+
+{% block body %}
+    <div class="form-container mt-5">
+        <form action="/admin-login" method = 'POST'>
+            <h2>Welcome to admin Log in</h2>
+            <div class="my-3">
+                <label for="username">username</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="my-3">
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="Password" minlength="4" required>
+            </div>
+            <div class="button-container">
+                <input type="submit" value="login" class="btn btn-primary btn-md">
+            </div>
+            <div class="message mt-2" style="color: red;">
+                {{message}}
+            </div>
+        </form>
+    </div>
+{% endblock %} 

@@ -1,0 +1,59 @@
+{% extends 'base_template.html' %}
+{% block css %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user_login.css') }}">
+    <script>
+        function checkTotal(){
+            const price = {{product_price|tojson}}; 
+            const quantity = parseInt(document.getElementById('quantity').value); 
+            if (isNaN(quantity) || (quantity == 0)){
+                alert('enter quantity');
+            }
+            else{
+                const total = price*quantity;
+                document.getElementById('totalPrice').innerHTML = total;
+            }
+        }
+    </script>
+{% endblock %}
+{% block title %}
+    <title>Buy Product</title>
+{% endblock %}
+
+{% block body %}
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+    <a class="navbar-brand">Ecom App</a>
+    <form class="d-flex" role="search" method = 'POST'>
+        <input type="hidden" name="form_name" value="logout-form">
+        <a href="/cart/{{username}}" class="btn btn-outline-success mx-3">Cart</a>
+        <button class="btn btn-outline-danger" type="submit">Log out</button>
+    </form>
+    </div>
+</nav>
+<div class="dashboard-container mt-5">
+    <div class="contegory-form-container w-50 border rounded-2 p-3">
+        <h2 class="m-2">Buy {{product_name}}</h2>
+        <p class="m-2">Available in store: {{max_limit}} units</p>
+        <form method = 'POST' class="m-2">
+            <input type="hidden" name="form_name" value="buy-product">
+            <div class="my-3">
+                <p>Price per unit : <b>{{product_price}}/-</b></p>
+            </div>
+            <div class="my-3">
+                <label for="quantity">Quantity:</label>
+                <input type="number" name= 'quantity' id = 'quantity' min="0" max="{{max_limit}}" required>
+                <button onclick="checkTotal()" type="button" class="btn btn-outline-success px-2 py-1">Check total</button>
+            </div>
+            <div class="my-3">
+                <p>Total : <span class="totalPrice" id="totalPrice">0</span></p>
+            </div>
+            <div class="my-3">
+                <input type="submit" value="Buy" class="btn-success btn py-1 px-3">
+            </div>
+            <div class="message mt-2" style="color: red;">
+                {{message}}
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %} 

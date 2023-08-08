@@ -1,0 +1,28 @@
+{% extends 'base_template.html' %}
+{% block css %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user_login.css') }}">
+{% endblock %}
+{% block title %}
+    <title>Admin Dashboard</title>
+{% endblock %}
+
+{% block body %}
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand">{{admin}}'s, dashboard</a>
+        <form class="d-flex" role="search" method = 'POST'>
+            <input type="hidden" name="form_name" value="logout-form">
+            <a href="/cart" class="btn btn-outline-success mx-3">Summary</a>
+            <button class="btn btn-outline-danger" type="submit">Log out</button>
+        </form>
+        </div>
+    </nav>
+    <div class="dashboard-container mt-5">
+
+        <div class="category-card-container" style="display: flex;">
+
+        </div>
+
+        <a href="/" class="btn btn-outline-success">Go to Home</a>
+    </div>
+{% endblock %} 

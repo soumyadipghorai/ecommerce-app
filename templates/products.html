@@ -1,0 +1,58 @@
+{% extends 'base_template.html' %}
+{% block css %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user_login.css') }}">
+    <script>
+        function cartSuccess(){
+            alert('Successfully added to Cart');
+        }
+    </script>
+{% endblock %}
+{% block title %}
+    <title>Product</title>
+{% endblock %}
+
+{% block body %}
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand">Ecom App</a>
+        <form class="d-flex" role="search" method = 'POST'>
+            <input type="hidden" name="form_name" value="logout-form">
+            <a href="/cart/{{name}}" class="btn btn-outline-success mx-3">Cart</a>
+            <button class="btn btn-outline-danger" type="submit">Log out</button>
+        </form>
+        </div>
+    </nav>
+    <div class="product-container mt-5">
+        <h2>Available products</h2>
+        <p>Welcome, {{name}}!</p>
+        {% for category in prod_cat_dict %}
+            <div class="category-container border rounded-2 my-3 p-3">
+                <h4>{{category}}</h4>
+                <div class="product-card-container" style="display: flex;">
+                    {% for product in prod_cat_dict[category] %}
+                        <div class="product-card p-4 m-2 border rounded-2">
+                            <div class="product-info mb-3">
+                                    <b>{{product['name']}}</b>
+                                    <b>{{product['price']}}</b>
+                            </div>
+
+                            {% if product['quantity'] > 0 %}
+                            <div class="button-container" style="display: flex;">
+                                <a href="/buy-product/{{name}}?product-name={{product['name']}}" class="btn btn-success">Buy</a>
+                                <form method="POST" class="mx-2">
+                                    <input type="hidden" name="form_name" value="add_to_cart"> 
+                                    <input type="hidden" name="product-name" value="{{product['name']}} + {{category}}"> 
+                                    <button onclick="cartSuccess()" type="submit" class="btn btn-outline-secondary">Add to cart</button>
+                                </form>
+                            </div>
+                            {% else %}
+                                <button type="button" class="btn btn-outline-secondary" disabled>Out of stock</button>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        {% endfor %}
+    </div>
+{% endblock %} 

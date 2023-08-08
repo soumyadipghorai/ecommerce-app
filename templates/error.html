@@ -1,0 +1,48 @@
+{% extends 'base_template.html' %}
+{% block css %} 
+    <style>
+        .four_zero_four_bg{
+            background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+            height: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .four_zero_four_bg h3{
+            font-size:80px;
+        }
+
+        .contant_box_404{ 
+            margin-top:-50px;
+            text-align: center;
+        }
+    </style>
+{% endblock %}
+{% block title %}
+    <title>Erro Page</title>
+{% endblock %}
+
+{% block body %}
+<section class="page_404">
+    <div class="container">
+        <div class="row">	
+            <div class="col-sm-12 ">
+                <div class="text-center">
+                    <div class="four_zero_four_bg">
+                    </div>
+        
+                    <div class="contant_box_404">
+                        <h3 class="h2">
+                        Look like you're lost
+                        </h3>
+                        
+                        <p>the page you are looking for not avaible!</p>
+        
+                        <a href="/" class="btn btn-outline-success">Go to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
