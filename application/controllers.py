@@ -4,6 +4,7 @@ from application.models import User, Admin, Category, Product, Order, Cart
 from application.database import db
 from datetime import date 
 import matplotlib.pyplot as plt
+# import plotly.express as px
 
 
 all_users = [user.username for user in User.query.all()]
@@ -111,15 +112,32 @@ def admin_dashboard(admin) :
             if len(all_category) == 0 :
                 return render_template('admin_dashboard.html', catgoryList = all_category, admin = admin, message = message)
             else : 
+
+                total_sales = sum([int(order.total_price) for order in Order.query.all()])
+                total_inventory = sum([int(product.price) * int(product.quantity) for product in Product.query.all()])
+                total_items = sum([int(product.quantity) for product in Product.query.all()])
+
+                hero_data = {
+                    'sales' : total_sales, 
+                    'inventory' : total_inventory, 
+                    'items' : total_items
+                }
+
                 category_product_mapping = {}
                 for category in all_category : 
                     product_list = Product.query.filter_by(category = category.name).all()
                     category_product_mapping[category.name] = []
                     for product in product_list : 
-                        category_product_mapping[category.name].append(product.name)
+                        category_product_mapping[category.name].append({
+                            'product-name' : product.name, 
+                            'product-quantity' : product.quantity
+                        })
                     
 
-                return render_template('admin_dashboard.html', catgoryList = category_product_mapping, admin = admin, message = message)
+                return render_template(
+                    'admin_dashboard.html', catgoryList = category_product_mapping, 
+                    admin = admin, message = message, hero_data = hero_data
+                )
         else : 
             return redirect(url_for('admin_login'))
 
@@ -158,14 +176,40 @@ def dash_board(admin) :
                 else : 
                     category_wise_sale[order.category] += order.total_price
 
-            
-            x_axis = list(category_wise_sale.keys())
-            y_axis = list(category_wise_sale.values())
+            all_category_value = Category.query.all()
+            all_category = {}
 
-            #tick_label does the some work as plt.xticks()
-            plt.bar(range(len(category_wise_sale)), y_axis, tick_label=x_axis)
-            plt.savefig('bar.png')
-            return category_wise_sale
+            for category in all_category_value :
+                all_category[category.name.strip()] = 0 
+
+                all_product_from_same_category = Product.query.filter_by(category = category.name.strip()).all()
+                for product in all_product_from_same_category : 
+                    all_category[category.name.strip()] += int(product.price) * int(product.quantity)
+
+
+            
+            category_name_sale = list(category_wise_sale.keys())
+            total_sale = list(category_wise_sale.values())
+
+            category_name_store = list(all_category.keys())
+            total_value = list(all_category.values())
+
+            fig = plt.figure()
+            plt.clf()
+            plt.bar(category_name_sale, total_sale, tick_label = category_name_sale, color = 'green')
+            plt.xlabel("Category")
+            plt.ylabel("Total Sales")
+            plt.title("Categoy wise total Sales")
+            plt.savefig('static/images/category-wise-sale.png')
+            
+            fig = plt.figure()
+            plt.clf()
+            plt.bar(category_name_store, total_value, tick_label = category_name_store, color ='blue')
+            plt.xlabel("Category in Stock")
+            plt.ylabel("Total value")
+            plt.title("Categoy wise total Stock price")
+            plt.savefig('static/images/category-wise-stock.png')
+
             return render_template('dashbord.html', admin = admin)
 
         else : 

@@ -19,10 +19,17 @@
     </nav>
     <div class="dashboard-container mt-5">
 
-        <div class="category-card-container" style="display: flex;">
-
+        <div class="category-card-container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="{{url_for('static', filename='/images/category-wise-sale.png')}}" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <img src="{{url_for('static', filename='/images/category-wise-stock.png')}}" alt="">
+                </div>
+            </div>
         </div>
 
-        <a href="/" class="btn btn-outline-success">Go to Home</a>
+        <a href="/admin-dashboard/{{admin}}" class="btn btn-outline-success">Go to Home</a>
     </div>
 {% endblock %} 

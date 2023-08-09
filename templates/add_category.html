@@ -1,6 +1,6 @@
 {% extends 'base_template.html' %}
 {% block css %} 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user_login.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='add_category.css') }}">
 {% endblock %}
 {% block title %}
     <title>Admin Dashboard</title>
@@ -9,7 +9,7 @@
 {% block body %}
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-        <a class="navbar-brand">{{admin}}'s, dashboard</a>
+            <a class="navbar-brand"><h4>{{admin}}'s, dashboard</h4></a>
         <form class="d-flex" role="search" method = 'POST'>
             <input type="hidden" name="form_name" value="logout-form">
             <a href="/dashboard/{{admin}}" class="btn btn-outline-success mx-3">Summary</a>
@@ -18,17 +18,27 @@
         </div>
     </nav>
     <div class="dashboard-container mt-5">
-        <div class="contegory-form-container">
-            <h2 class="m-2">Create New category</h2>
-            <form action="/add-category/{{admin}}" method = 'POST' class="m-2">
-                <input type="hidden" name="form_name" value="category-form">
-                <label for="category">Category Name :</label>
-                <input type="text" name="categoryName" id="categoryName" required > 
-                <input type="submit" value="Create" class="btn btn-success">
-                <div class="message mt-2" style="color: red;">
-                    {{message}}
+        <div class="category-form-container border row">
+            <div class="col-sm-7 p-5 text-section">
+                <div class="text-section mt-5 mb-4">
+                    <h2 class="m-2 lh-1">Create New category</h2>
+                    <p class="m-2 section-description">You can create New category here by entering the new category and pressing the create button. Make Sure that the category is not already present.</p>
                 </div>
-            </form>
+                <form action="/add-category/{{admin}}" method = 'POST' class="m-2">
+                    <input type="hidden" name="form_name" value="category-form">
+                    <label for="category"><p class="m-0">Category Name :</p></label>
+                    <input type="text" name="categoryName" id="categoryName" placeholder="Enter Category Name..." class="mb-3 w-75 p-2 rounded-2 border-1" required> 
+                    <div class="button-container">
+                        <input type="submit" value="Create" class="btn btn-success px-3">
+                    </div>
+                    <div class="message mt-2" style="color: red;">
+                        {{message}}
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-5 img-section">
+
+            </div>
         </div>
     </div>
 {% endblock %} 

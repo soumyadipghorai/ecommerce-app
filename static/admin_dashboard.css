@@ -1,0 +1,46 @@
+.hero-data-container, .category-card-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-card{
+    width: 32%;
+}
+
+.category-container{
+    height: fit-content;
+    width: 24%;
+}
+
+.category-container:hover, .hero-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s linear;
+}
+
+.poduct-container{
+    height: 20vh;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.poduct-container::-webkit-scrollbar {
+    display: none;
+}
+
+.available-product{
+    max-width: 99%;
+}
+
+.dashboard-container .hero-card p{
+    color: rgb(237, 235, 235);
+}
+
+.hero-card:nth-child(1){
+    background-color: #198754;
+}
+.hero-card:nth-child(2){
+    background-color: #ffc107;
+}
+.hero-card:nth-child(3){
+    background-color: #dc3545;
+}

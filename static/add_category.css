@@ -1,0 +1,27 @@
+.dashboard-container{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.category-form-container{
+    max-width: 80%;
+    height: 60vh;
+    border-radius: 10px;
+}
+
+.category-form-container h2{
+    color: var(--headerTextColor);
+}
+
+.category-form-container p{
+    color: var(--paraTextColor);
+}
+
+.img-section{
+    background: url('https://kuow-prod.imgix.net/store/5c95f2c4e1dd424fc20c5ea1bf582f5d.jpg?ixlib=rails-2.1.4&auto=format&crop=faces&fit=crop&h=634&w=924');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px 10px 10px 0px;
+}
