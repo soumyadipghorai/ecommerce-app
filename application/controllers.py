@@ -4,23 +4,50 @@ from application.models import User, Admin, Category, Product, Order, Cart
 from application.database import db
 from datetime import date 
 import matplotlib.pyplot as plt
+import pandas as pd 
 # import plotly.express as px
 
 
 all_users = [user.username for user in User.query.all()]
 all_admin = [user.username for user in Admin.query.all()]
 
+# @app.route('/', methods = ['GET', 'POST'])
+# def landing_page() : 
+#     return render_template('index.html')
+
+def create_data() : 
+    output = []
+    all_orders = Order.query.all()
+    for order in all_orders : 
+        output.append([
+            order.order_id, order.username, order.category, 
+            order.product_name,order.price, order.quantity,             
+            order.date, order.total_price
+            ])
+
+    data = pd.DataFrame(output, columns = [
+        'order_id', 'username', 'category', 'product_name', 
+        'price', 'quantity', 'order_date', 'total_price'
+    ])
+
+    data.to_csv('static/data/order_data.csv', encoding = 'utf-8', index = False)
+
 @app.route('/', methods = ['GET', 'POST'])
 def login() : 
     if request.method == 'GET' : 
-        if session['user'] is None or session['user'] not in all_users: 
-            return render_template('user_login.html', message = '')
-        else : 
-            name = session['user']
+        try : 
+            if session['user'] is None or session['user'] not in all_users : 
+                return render_template('user_login.html', message = '')
+            else : 
+                name = session['user']
 
-            return redirect(url_for('product_page', username = name))
+                return redirect(url_for('product_page', username = name))
+        except : 
+            return render_template('user_login.html', message = '')
+
     
     elif request.method == 'POST' : 
+        print('here')
         user_email = request.form['email']
         user_password = request.form['Password']
 
@@ -71,11 +98,14 @@ def signUp() :
 @app.route('/admin-login', methods = ['GET', 'POST'])
 def admin_login() : 
     if request.method == 'GET' : 
-        if session['user'] is None or session['user'] not in all_admin : 
+        try : 
+            if session['user'] is None or session['user'] not in all_admin : 
+                return render_template('admin_login.html', message = "")
+            else : 
+                name = session['user']
+                return redirect(url_for('admin_dashboard', admin = name))
+        except : 
             return render_template('admin_login.html', message = "")
-        else : 
-            name = session['user']
-            return redirect(url_for('admin_dashboard', admin = name))
     
     elif request.method == 'POST' : 
         admin_username = request.form['username']
@@ -209,6 +239,7 @@ def dash_board(admin) :
             plt.ylabel("Total value")
             plt.title("Categoy wise total Stock price")
             plt.savefig('static/images/category-wise-stock.png')
+            create_data()
 
             return render_template('dashbord.html', admin = admin)
 
@@ -221,7 +252,7 @@ def dash_board(admin) :
         if form_name == 'logout-form' : 
             session['user'] = None
             return redirect(url_for('admin_login'))
-
+ 
 
 @app.route('/products/<username>', methods = ['GET', 'POST'])
 def product_page(username) : 
@@ -230,11 +261,11 @@ def product_page(username) :
             category_product_maping = {}
             all_category = Category.query.all()
             for category in all_category : 
-                category_product_maping[category.name] = []
+                category_product_maping[category.name.strip()] = []
                 all_product = Product.query.filter_by(category = category.name).all()
                 for product in all_product : 
-                    category_product_maping[category.name].append({
-                        'name' : product.name, 
+                    category_product_maping[category.name.strip()].append({
+                        'name' : product.name.strip(), 
                         'price' : product.price, 
                         'quantity' : product.quantity})
 
@@ -364,7 +395,7 @@ def buy_product(username) :
             product_name = request.args.get('product-name')
             print(product_name)
 
-            product_details = Product.query.filter_by(name = product_name).first()
+            product_details = Product.query.filter_by(name = product_name.strip()).first()
 
             product_quantity = product_details.quantity 
 

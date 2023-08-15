@@ -1,10 +1,11 @@
 .hero-data-container, .category-card-container{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .hero-card{
     width: 32%;
+    height: 15vh;
 }
 
 .category-container{

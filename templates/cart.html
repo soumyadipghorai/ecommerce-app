@@ -6,6 +6,12 @@
             alert('Quantity Updated');
         }
     </script>
+    <style>
+        .cart-item-card:hover{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            transition: 0.3s linear;
+        }
+    </style>
 {% endblock %}
 {% block title %}
     <title>Buy Product</title>
@@ -14,7 +20,7 @@
 {% block body %}
 <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
-    <a class="navbar-brand">Ecom App</a>
+    <a class="navbar-brand" href="/products/{{username}}">Ecom App</a>
     <form class="d-flex" role="search" method = 'POST'>
         <input type="hidden" name="form_name" value="logout-form">
         <a href="/products/{{username}}" class="btn btn-outline-success mx-3">Home</a>
@@ -26,11 +32,17 @@
     <h3>List of products</h3>
 
     {% for data in cart_data %}
-        <div class="cart-item-card border rounded-2 my-3 p-2 row mx-0">
+        <div class="cart-item-card border bg-light rounded-2 my-3 p-4 row mx-0">
             <div class="col-sm-6">
-                <p><b>Product Name: </b> {{data['product_name']}}</p>
-                <p><b>Quantity: </b>{{data['quantity']}}</p>
-                <p><b>Price: </b>{{data['price']}}</p>
+                <h4>{{data['product_name']}}</h4>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p><b>Quantity: </b>{{data['quantity']}}</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p><b>Price: </b>{{data['price']}}</p>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-6">
                 <form method = 'POST'>
@@ -52,7 +64,7 @@
 
     <p><b>Total Price : </b> {{total_price}}</p>
 
-    <form method="POST" class="buy-all-form">
+    <form method="POST" class="buy-all-form mb-5">
         <input type="hidden" name="form_name" value="buy-all-form">
         <button type="submit" class="btn btn-success">Buy All</button>
     </form>

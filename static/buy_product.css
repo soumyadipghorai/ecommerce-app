@@ -1,0 +1,15 @@
+.dashboard-container{
+    border-radius: 10px;
+}
+
+.form-control{
+    width: 30%;
+}
+
+.image-section{
+    background: url('https://img.freepik.com/premium-photo/asian-farmer-woman-harvesting-fresh-rambutan-wooden-crate-rambutan-garden-organic-fruit-agriculture-concept_61243-1581.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px 10px 10px 0px;
+}

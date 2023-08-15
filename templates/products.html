@@ -1,6 +1,6 @@
 {% extends 'base_template.html' %}
 {% block css %} 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user_login.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='product.css') }}">
     <script>
         function cartSuccess(){
             alert('Successfully added to Cart');
@@ -14,7 +14,7 @@
 {% block body %}
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-        <a class="navbar-brand">Ecom App</a>
+        <a class="navbar-brand" href="/products/{{name}}">Ecom App</a>
         <form class="d-flex" role="search" method = 'POST'>
             <input type="hidden" name="form_name" value="logout-form">
             <a href="/cart/{{name}}" class="btn btn-outline-success mx-3">Cart</a>
@@ -22,18 +22,28 @@
         </form>
         </div>
     </nav>
-    <div class="product-container mt-5">
-        <h2>Available products</h2>
-        <p>Welcome, {{name}}!</p>
+    <div class="hero-section bg-light row my-5 mx-0 shadow">
+        <div class="col-sm-6 p-5">
+            <div class="text-section mt-5 mb-4">
+                <h2>Available products</h2>
+                <p class="description my-2">Welcome, {{name}}! Today We have the following products available for you, you can directly buy products from this page or maybe add to cart and buy every together in future.</p>
+            </div>
+            <a href="#products"><button class="btn btn-success">View Products</button></a>
+        </div>
+        <div class="col-sm-6 image-section"></div>
+    </div>
+    <div class="product-container mt-5" id="products">
         {% for category in prod_cat_dict %}
-            <div class="category-container border rounded-2 my-3 p-3">
-                <h4>{{category}}</h4>
+            <div class="category-container bg-light border rounded-2 my-3 p-3">
+                <h3 class="m-2 category-name">{{category}}</h3>
                 <div class="product-card-container" style="display: flex;">
                     {% for product in prod_cat_dict[category] %}
-                        <div class="product-card p-4 m-2 border rounded-2">
+                        <div class="product-card bg-white p-4 m-2 border rounded-2">
                             <div class="product-info mb-3">
-                                    <b>{{product['name']}}</b>
-                                    <b>{{product['price']}}</b>
+                                    <h5 class="product-name">{{product['name']}}</h5>
+                                    <p class="product-price">
+                                        <b>₹{{product['price']}}</b>
+                                    </p>
                             </div>
 
                             {% if product['quantity'] > 0 %}

@@ -1,0 +1,438 @@
+# using swagger.io
+
+openapi: 3.0.0
+info:
+  title: Ecom App Open API Documentation
+  version: 1.0.0
+  description: |
+    Documentation for CRUD APIs used for building this ecom App. 
+    <h2> Error Codes </h2>  <table>
+      <thead>
+        <th>Resource</th>
+        <th>Error Code</th>
+        <th>Message</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>User</td>
+        <td>BE101</td>
+        <td>username is required</td>
+      </tr>
+      <tr>
+        <td>User</td>
+        <td>BE1002</td>
+        <td>User Not found</td>
+      </tr>
+      <tr>
+        <td>User</td>
+        <td>BE1003</td>
+        <td>Invalid email</td>
+      </tr>
+      <tr>
+        <td>User</td>
+        <td>BE1004</td>
+        <td>Duplicate user</td>
+      </tr>
+      <tr>
+        <td>User</td>
+        <td>BE1005</td>
+        <td>Password is required</td>
+      </tr>
+      <tr>
+        <td>User</td>
+        <td>BE1006</td>
+        <td>Duplicate email</td>
+      </tr>
+      <tr>
+        <td>User</td>
+        <td>BE1007</td>
+        <td>Enter strong password</td>
+      </tr>
+      <tr>
+        <td>Product</td>
+        <td>BE102</td>
+        <td>Product Not Found</td>
+      </tr>
+      <tr>
+        <td>Product</td>
+        <td>BE1008</td>
+        <td>Product name is required</td>
+      </tr>
+      <tr>
+        <td>Product</td>
+        <td>BE1009</td>
+        <td>Category name is required</td>
+      </tr>
+      <tr>
+        <td>Product</td>
+        <td>BE1010</td>
+        <td>Unit is required</td>
+      </tr>
+      <tr>
+        <td>Product</td>
+        <td>BE1011</td>
+        <td>Price is required</td>
+      </tr>
+      <tr>
+        <td>Product</td>
+        <td>BE1012</td>
+        <td>Quantity is required</td>
+      </tr>
+      </tbody>
+    </table>
+servers:
+  - url: 'http://127.0.0.1:8080/'
+paths:
+  /api/user/{username}:
+    description: >-
+      End point to read, update and delete a user resource with username.
+    get:
+      description: Operation to get a user details
+      parameters:
+        - in: path
+          name: username
+          required: true
+          schema:
+            type: string
+            example: name
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                title: user object
+                type: object
+                properties:
+                  user_id:
+                    type: integer
+                    example: 201
+                  username:
+                    type: string
+                    example: name
+                  email:
+                    type: string
+                    example: name@example.com
+        '400':
+          description: Bad request.
+        '404':
+          description: Resource not found.
+        '500':
+          description: Internal Server Error.
+    put:
+      description: Operation to update the user detail
+      parameters:
+        - in: path
+          name: username
+          required: true
+          schema:
+            type: string
+            example: name
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: name@example2.org
+                password: 
+                  type: string 
+                  example: password 
+      responses:
+        '200':
+          description: Successfuly updated.
+          content:
+            application/json:
+              schema:
+                title: user object
+                type: object
+                properties:
+                  user_id:
+                    type: integer
+                    example: 201
+                  username:
+                    type: string
+                    example: name
+                  email:
+                    type: string
+                    example: name@example2.com
+        '400':
+          description: Bad request.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error_code:
+                    type: string
+                  error_message:
+                    type: string
+        '404':
+          description: Resource you requested to update not found
+        '500':
+          description: Internal Server Error
+    delete:
+      description: Operation to delete the user.
+      parameters:
+        - in: path
+          name: username
+          required: true
+          schema: 
+            type: string 
+            example: name
+      requestBody:
+        content: 
+          application/json:
+            schema:
+              title: user object
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: name@example.com
+                username:
+                  type: string 
+                  example: name
+      responses:
+        '200':
+          description: Successfully Deleted.
+        '400':
+          description: Bad request.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error_code:
+                    type: string
+                  error_message:
+                    type: string
+        '404':
+          description: User does not exist.
+        '500':
+          description: Intenal Server Error.
+  /api/user:
+    description: End point to create a user.
+    post:
+      description: Operation to create the user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              title: user object
+              type: object
+              properties:
+                username:
+                  type: string
+                  example: name
+                email:
+                  type: string
+                  example: name@example.com
+                password: 
+                  type: string
+                  example: password
+      responses:
+        '201':
+          description: Successfully Created.
+        '400':
+          description: Bad request.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error_code:
+                    type: string
+                  error_message:
+                    type: string
+        '409':
+          description: username already exist.
+        '500':
+          description: Internal Server Error.
+
+  /api/category/{product}:
+    description: >-
+      End point to read, update and delete a user resource with username.
+    get:
+      description: Operation to get a product details
+      parameters:
+        - in: path
+          name: product
+          required: true
+          schema:
+            type: string
+            example: name
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                title: user object
+                type: object
+                properties:
+                  name:
+                    type: string
+                    example: product_name
+                  unit:
+                    type: string
+                    example: rs_per_kg
+                  price:
+                    type: integer
+                    example: 100
+                  quantity: 
+                    type: integer 
+                    example: 10
+                  category: 
+                    type: string 
+                    example: category
+        '400':
+          description: Bad request.
+        '404':
+          description: Resource not found.
+        '500':
+          description: Internal Server Error.
+    put:
+      description: Operation to update the product detail
+      parameters:
+        - in: path
+          name: product
+          required: true
+          schema:
+            type: string
+            example: name
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: product
+                category: 
+                  type: string 
+                  example: category
+      responses:
+        '200':
+          description: Successfuly updated.
+          content:
+            application/json:
+              schema:
+                title: user object
+                type: object
+                properties:
+                  name:
+                    type: string
+                    example: product_name
+                  unit:
+                    type: string
+                    example: rs_per_kg
+                  price:
+                    type: integer
+                    example: 100
+                  quantity: 
+                    type: integer 
+                    example: 10
+                  category: 
+                    type: string 
+                    example: category
+        '400':
+          description: Bad request.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error_code:
+                    type: string
+                  error_message:
+                    type: string
+        '404':
+          description: Resource you requested to update not found
+        '500':
+          description: Internal Server Error
+    delete:
+      description: Operation to delete the product.
+      parameters:
+        - in: path
+          name: product
+          required: true
+          schema: 
+            type: string 
+            example: name
+      requestBody:
+        content: 
+          application/json:
+            schema:
+              title: user object
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: product
+
+      responses:
+        '200':
+          description: Successfully Deleted.
+        '400':
+          description: Bad request.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error_code:
+                    type: string
+                  error_message:
+                    type: string
+        '404':
+          description: User does not exist.
+        '500':
+          description: Intenal Server Error.
+  /api/product:
+    description: End point to create a product.
+    post:
+      description: Operation to create the product
+      requestBody:
+        content:
+          application/json:
+            schema:
+              title: product object
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: product
+                unit:
+                  type: string
+                  example: rs_per_kg
+                price:
+                  type: integer
+                  example: 100
+                quantity: 
+                  type: integer 
+                  example: 10
+                category: 
+                  type: string 
+                  example: category
+      responses:
+        '201':
+          description: Successfully Created.
+        '400':
+          description: Bad request.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error_code:
+                    type: string
+                  error_message:
+                    type: string
+        '409':
+          description: username already exist.
+        '500':
+          description: Internal Server Error.

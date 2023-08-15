@@ -1,0 +1,56 @@
+order_id,username,category,product_name,price,quantity,order_date,total_price
+1,ghorai,cake,chocolate cake,110,1,2023-08-08,110
+2,ghorai,cake,chocolate cake,110,1,2023-08-08,110
+3,ghorai,cake,black current,100,1,2023-08-08,100
+4,new_user1,cake,black current,100,1,2023-08-08,100
+5,ghorai,cake,black current,100,3,2023-08-08,300
+6,ghorai,cake,chocolate cake,110,7,2023-08-08,770
+7,ghorai,cake,black current,100,1,2023-08-08,100
+8,ghorai,cake,black current,100,1,2023-08-08,100
+9,ghorai,cake,black current ,100,2,2023-08-08,200
+10,ghorai,bread,pound bread ,30,2,2023-08-08,60
+11,ghorai,cake,black current ,100,1,2023-08-08,100
+12,ghorai,bread,pound bread ,30,1,2023-08-08,30
+13,ghorai,cake,black current ,100,2,2023-08-08,200
+14,ghorai,bread,pound bread ,30,2,2023-08-08,60
+15,ghorai,cake,black current ,100,1,2023-08-08,100
+16,ghorai,bread,pound bread ,30,1,2023-08-08,30
+17,ghorai,cake,black current ,100,1,2023-08-08,100
+18,ghorai,bread,pound bread ,30,1,2023-08-08,30
+19,ghorai,cookies,burbon,50,3,2023-08-09,150
+20,ghorai,cake,black current ,100,2,2023-08-09,200
+21,ghorai,cake,pastry ,25,3,2023-08-09,75
+22,ghorai,Non Veg,Chicken ,210,4,2023-08-09,840
+23,ghorai,cake,chocolate cake,100,1,2023-08-13,100
+24,ghorai,cake,chocolate cake ,100,1,2023-08-13,100
+25,ghorai,cake,black current ,100,1,2023-08-13,100
+26,ghorai,cake,chocolate cake ,300,1,2023-08-13,300
+27,ghorai,cake,chocolate cake ,300,2,2023-08-13,600
+28,ghorai,bread,Potato bread ,50,2,2023-08-13,100
+29,ghorai,Non Veg,Chicken ,210,3,2023-08-13,630
+30,ghorai,cake,chocolate cake,300,3,2023-08-13,900
+31,ghorai,cake,chocolate cake ,300,2,2023-08-13,600
+32,ghorai,bread,pound bread ,30,2,2023-08-13,60
+33,ghorai,Non Veg,Chicken ,210,3,2023-08-13,630
+34,ghorai,cookies,burbon ,50,5,2023-08-13,250
+35,ghorai,cake,pastry,25,3,2023-08-13,75
+36,ghorai,cake,chocolate cake ,300,2,2023-08-13,600
+37,ghorai,bread,Potato bread ,50,1,2023-08-13,50
+38,ghorai,Non Veg,Chicken ,210,2,2023-08-13,420
+39,ghorai,cake,black current,100,2,2023-08-13,200
+40,ghorai,cake,black current ,100,2,2023-08-13,200
+41,ghorai,bread,Potato bread ,50,1,2023-08-13,50
+42,ghorai,Non Veg,Chicken ,210,3,2023-08-13,630
+43,ghorai,bread,Potato bread,50,2,2023-08-13,100
+44,ghorai,cake,pastry ,25,2,2023-08-13,50
+45,ghorai,bread,Potato bread ,50,1,2023-08-13,50
+46,ghorai,fruit,orange ,50,3,2023-08-13,150
+47,ghorai,cake,pastry,25,2,2023-08-13,50
+48,ghorai,bread,Potato bread,50,1,2023-08-13,50
+49,ghorai,cake,pastry ,25,2,2023-08-13,50
+50,ghorai,fruit,mango ,75,1,2023-08-13,75
+51,ghorai,cookies,burbon ,50,2,2023-08-13,100
+52,ghorai,fruit,orange,50,2,2023-08-13,100
+53,ghorai,cake,pastry ,25,2,2023-08-13,50
+54,ghorai,fruit,orange ,50,1,2023-08-13,50
+55,ghorai,Non Veg,Fish ,100,1,2023-08-13,100

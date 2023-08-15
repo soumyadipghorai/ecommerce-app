@@ -9,7 +9,7 @@
 {% block body %}
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand"><h4>{{admin}}'s, dashboard</h4></a>
+            <a class="navbar-brand" href="/admin-dashboard/{{admin}}"><h4>{{admin}}'s, dashboard</h4></a>
         <form class="d-flex" role="search" method = 'POST'>
             <input type="hidden" name="form_name" value="logout-form">
             <a href="/dashboard/{{admin}}" class="btn btn-outline-success mx-3">Summary</a>
@@ -18,7 +18,7 @@
         </div>
     </nav>
     <div class="dashboard-container mt-5">
-        <div class="category-form-container border row">
+        <div class="category-form-container shadow border row">
             <div class="col-sm-7 p-5 text-section">
                 <div class="text-section mt-5 mb-4">
                     <h2 class="m-2 lh-1">Create New category</h2>

@@ -1,0 +1,24 @@
+.product-price, .category-name, .description{
+    color: var(--paraTextColor);
+}
+
+.hero-section{
+    height: 60vh;
+    border-radius: 10px;
+}
+
+.category-name, .product-name{
+    text-transform: capitalize;
+}
+
+.hero-section p{
+    color: var(--paraTextColor);
+}
+
+.image-section{
+    background: url('https://media.istockphoto.com/id/1128687123/photo/shopping-bag-full-of-fresh-vegetables-and-fruits.jpg?s=170667a&w=0&k=20&c=neP_ypf93xdNWIuK-Xdcah7sXfQLurLkVJr6gwUtU7k=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 10px 10px 0px;
+}

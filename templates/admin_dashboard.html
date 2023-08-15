@@ -22,7 +22,7 @@
 {% block body %}
     <nav class="navbar bg-body-tertiary rounded-2">
         <div class="container-fluid">
-        <a class="navbar-brand"><h4>{{admin}}'s, dashboard</h4></a>
+        <a class="navbar-brand" href="/admin-dashboard/{{admin}}"><h4>{{admin}}'s, dashboard</h4></a>
         <form class="d-flex" role="search" method = 'POST'>
             <input type="hidden" name="form_name" value="logout-form">
             <a href="/dashboard/{{admin}}" class="btn btn-outline-success mx-3">Summary</a>
@@ -33,14 +33,16 @@
     <div class="dashboard-container mt-5">
         <div class="hero-data-container">
             {% for key in hero_data.keys() %}
-                <div class="hero-card rounded-2 p-3 row m-0">
+                <div class="hero-card mx-2 rounded-2 p-3 row m-0">
                     <div class="col-sm-9">
-                        <p class="m-0" style="color: white;"><b>{{hero_data[key]}}</b></p>
                         {% if key == 'sales' %}
+                            <p class="m-0" style="color: white;"><b>₹{{hero_data[key]}}</b></p>
                             <p>Total Sales</p>
                         {% elif key == 'inventory' %}
+                            <p class="m-0" style="color: white;"><b>₹{{hero_data[key]}}</b></p>
                             <p>Total inventory </p>
                         {% else %}
+                            <p class="m-0" style="color: white;"><b>{{hero_data[key]}}</b></p>
                             <p>Total Products</p>
                         {% endif %}
                     </div>
@@ -92,7 +94,7 @@
             {% for category_row in catgoryList | batch(4) %} 
                 <div class="category-card-container">
                     {% for category in category_row %}
-                        <div class="category-container mt-3 p-3 border rounded-2">
+                        <div class="category-container bg-light mx-2 mt-3 p-3 border rounded-2">
                             <form action="" method = 'POST'>
                                 <input type="hidden" name="form_name" value="category-delete-form">
                                 <input type="hidden" name="category" value="{{category}}">
@@ -100,7 +102,7 @@
                                 <div class="poduct-container mb-2">
                                     {% for product in catgoryList[category] %}
                                         {% if product['product-name'] %}
-                                            <div class="available-product p-2 rounded-2 my-2 row bg-success-subtle">
+                                            <div class="available-product p-2 rounded-2 my-2 row bg-body-secondary">
                                                 <div class="col-sm-9">
                                                     <p class="m-0">{{product['product-name']}}</p>
                                                 </div>
@@ -124,6 +126,6 @@
             {% endfor %}
         {% endif %}
 
-        <a href="/add-category/{{admin}}" class="btn btn-outline-success my-3">Add Category</a>
+        <a href="/add-category/{{admin}}" class="btn btn-outline-success mx-2 my-3">Add Category</a>
     </div>
 {% endblock %} 
