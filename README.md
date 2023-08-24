@@ -36,4 +36,10 @@ pip install -r requirements.txt
 py main.py 
 ```
 
+New user can register but can't register as an admin, admin username and password is predefined.
+```
+username: admin-1
+password: 1234
+``` 
+
 the app should be running in the --> http://localhost:8080/
