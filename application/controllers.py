@@ -5,8 +5,6 @@ from application.database import db
 from datetime import date 
 import matplotlib.pyplot as plt
 import pandas as pd 
-# import plotly.express as px
-
 
 all_users = [user.username for user in User.query.all()]
 all_admin = [user.username for user in Admin.query.all()]
@@ -15,6 +13,7 @@ all_admin = [user.username for user in Admin.query.all()]
 # def landing_page() : 
 #     return render_template('index.html')
 
+# creating csv file for exporting the data 
 def create_data() : 
     output = []
     all_orders = Order.query.all()
@@ -32,6 +31,7 @@ def create_data() :
 
     data.to_csv('static/data/order_data.csv', encoding = 'utf-8', index = False)
 
+# user login ==> main landing page 
 @app.route('/', methods = ['GET', 'POST'])
 def login() : 
     if request.method == 'GET' : 
@@ -66,6 +66,9 @@ def login() :
         else : 
             return render_template('user_login.html', message = 'Wrong email')
 
+    else: 
+        return render_template('error.html')
+
 
 @app.route('/signin', methods = ['GET', 'POST'])
 def signUp() : 
@@ -93,6 +96,9 @@ def signUp() :
             session['user'] = user_name
 
             return redirect(url_for('product_page', username = user_name)) 
+
+    else: 
+        return render_template('error.html')
 
 
 @app.route('/admin-login', methods = ['GET', 'POST'])
@@ -142,7 +148,8 @@ def admin_dashboard(admin) :
             if len(all_category) == 0 :
                 return render_template('admin_dashboard.html', catgoryList = all_category, admin = admin, message = message)
             else : 
-
+                
+                # landing page additional info 
                 total_sales = sum([int(order.total_price) for order in Order.query.all()])
                 total_inventory = sum([int(product.price) * int(product.quantity) for product in Product.query.all()])
                 total_items = sum([int(product.quantity) for product in Product.query.all()])
@@ -191,12 +198,16 @@ def admin_dashboard(admin) :
                 db.session.commit()
                 return redirect(url_for('admin_dashboard', admin = admin))
 
+    else: 
+        return render_template('error.html')
+
 
 @app.route('/dashboard/<admin>', methods = ['GET', 'POST'])
 def dash_board(admin) : 
     if request.method == 'GET' : 
         if session['user'] == admin : 
-
+                
+            # filter data for summary dashboard 
             all_order = Order.query.all()
             category_wise_sale = {}
 
@@ -224,6 +235,7 @@ def dash_board(admin) :
             category_name_store = list(all_category.keys())
             total_value = list(all_category.values())
 
+            # creating plots for summary dashboard 
             fig = plt.figure()
             plt.clf()
             plt.bar(category_name_sale, total_sale, tick_label = category_name_sale, color = 'green')
@@ -252,12 +264,16 @@ def dash_board(admin) :
         if form_name == 'logout-form' : 
             session['user'] = None
             return redirect(url_for('admin_login'))
+
+    else: 
+        return render_template('error.html')
  
 
 @app.route('/products/<username>', methods = ['GET', 'POST'])
 def product_page(username) : 
     if request.method == 'GET' : 
         if session['user'] == username : 
+            # filter products 
             category_product_maping = {}
             all_category = Category.query.all()
             for category in all_category : 
@@ -322,6 +338,7 @@ def add_category(admin) :
         elif form_name == 'category-form' :
             category_name = request.form['categoryName']
 
+            # checking for existing category with same name 
             existing_category = Category.query.filter_by(name = category_name).first()
 
             print(url_for('add_category', admin = admin))
@@ -363,6 +380,8 @@ def add_product(admin) :
 
             category = request.args.get('category')
 
+            # if product with the same name exists then only update the info 
+            # else add new product
             product = Product.query.filter_by(name = product_name).first()
             if product :
                 product.unit = product_unit
@@ -419,7 +438,7 @@ def buy_product(username) :
 
                 quantity_ordered = request.form['quantity']
 
-
+                # add all the order info to the orders table 
                 order_username = username
                 order_category = product_details.category
                 order_product_name = product_name
@@ -491,6 +510,7 @@ def cart_page(username) :
             session['user'] = None 
             return redirect(url_for('login'))
 
+        # quantity update 
         elif form_name == 'update-quantity' : 
             quantity = request.form['quantity']
             ID = request.form['primary_key']
@@ -508,6 +528,7 @@ def cart_page(username) :
 
             list_of_items, total_price = [], 0
 
+            # add all the records to the order table only if the product is available and buy quantity > 0 
             for record in all_products : 
 
                 product_details = Product.query.filter_by(name = record.product_name.strip()).first()
@@ -534,3 +555,6 @@ def cart_page(username) :
             db.session.commit()
 
             return redirect(url_for('product_page', username = username))
+
+    else: 
+        return render_template('error.html')

@@ -54,3 +54,7 @@ order_id,username,category,product_name,price,quantity,order_date,total_price
 53,ghorai,cake,pastry ,25,2,2023-08-13,50
 54,ghorai,fruit,orange ,50,1,2023-08-13,50
 55,ghorai,Non Veg,Fish ,100,1,2023-08-13,100
+56,ghorai,fruit,mango,75,1,2023-08-24,75
+57,ghorai,cake,pastry ,25,1,2023-08-24,25
+58,ghorai,fruit,lichi ,100,1,2023-08-24,100
+59,ghorai,Non Veg,Fish ,100,1,2023-08-24,100
