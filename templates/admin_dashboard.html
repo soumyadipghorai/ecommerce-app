@@ -10,9 +10,11 @@
         }
 
         function insertInputBox(categoryName){
-            categoryName.innerHTML = `
-            <input type="text" name = "newCategoryName" >
-            <input class="btn btn-outline-success py-0 px-2 mt-2" type = "submit" value="Submit">
+            console.log(categoryName);
+            const div = document.getElementById(categoryName);
+            div.innerHTML = `
+            <input type="text" name = "newCategoryName" placeholder = "New Name" required style="width: 50%;">
+            <input class="btn btn-outline-success py-0 px-2 mt-2" type = "submit" value="Submit" style="width: 50%;">
             `;
         }
 
@@ -108,16 +110,12 @@
                             <form action="" method = "POST">
                                 <input type="hidden" name="form_name" value="category-edit-form">
                                 <input type="hidden" name="category-to-edit" value="{{category}}">
-                                <div class="row">
-                                    <div class="col-5">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <h4 class="my-2">{{category}}</h4>
-                                            </div>
-                                            <div class="col-6" id="{{category}}">
-                                                <input onclick="insertInputBox({{category}})" class="btn btn-outline-success py-0 px-2 mt-2" value="Edit">
-                                            </div>
-                                        </div>
+                                <div class="row" style="width: max-content;">
+                                    <div class="col-4">
+                                        <h4 class="my-2">{{category}}</h4>
+                                    </div>
+                                    <div class="col-8" id="{{category}}">
+                                        <input onclick="insertInputBox(categoryName = '{{category}}')" class="btn btn-outline-success py-0 px-2 mt-2" value="Edit" style="width: 50%;">
                                     </div>
                                 </div>
                             </form>
