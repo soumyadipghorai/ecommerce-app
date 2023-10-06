@@ -9,6 +9,13 @@
             alert('You are trying to delete a product');
         }
 
+        function insertInputBox(categoryName){
+            categoryName.innerHTML = `
+            <input type="text" name = "newCategoryName" >
+            <input class="btn btn-outline-success py-0 px-2 mt-2" type = "submit" value="Submit">
+            `;
+        }
+
         window.addEventListener('load', function(){
             const message = {{message|tojson}}; 
             console.log(message.length);
@@ -97,8 +104,23 @@
             {% for category_row in catgoryList | batch(4) %} 
                 <div class="category-card-container">
                     {% for category in category_row %}
-                        <div class="category-container bg-light mx-2 mt-3 p-3 border rounded-2">
-                            <h4 class="my-2">{{category}}</h4>
+                        <div class="category-container bg-light mx-2 mt-3 p-2 border rounded-2">
+                            <form action="" method = "POST">
+                                <input type="hidden" name="form_name" value="category-edit-form">
+                                <input type="hidden" name="category-to-edit" value="{{category}}">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h4 class="my-2">{{category}}</h4>
+                                            </div>
+                                            <div class="col-6" id="{{category}}">
+                                                <input onclick="insertInputBox({{category}})" class="btn btn-outline-success py-0 px-2 mt-2" value="Edit">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                             <div class="poduct-container mb-2">
                                 {% for product in catgoryList[category] %}
                                     {% if product['product-name'] %}
@@ -128,7 +150,7 @@
                                 <input type="hidden" name="form_name" value="category-delete-form">
                                 <input type="hidden" name="category" value="{{category}}">
                                 <a class="btn btn-outline-warning" href="/add-product/{{admin}}?category={{category}}">Edit</a>
-                                <input onclick="deleteWarning()" class="btn btn-outline-danger mx-2" type="submit" value="Delete" id={{category}}>
+                                <input onclick="deleteWarning()" class="btn btn-outline-danger mx-2" type="submit" value="Delete">
                             </form>
                         </div>
                     {% endfor %}

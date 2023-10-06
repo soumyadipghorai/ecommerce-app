@@ -146,6 +146,8 @@ def admin_dashboard(admin) :
                 message = "Can't delete category! Few products still available in the category"
             elif int(errorCode) == 22 : 
                 message = "Can't delete product! Few units still available for the product"
+            elif int(errorCode) == 23 : 
+                message = "Category dosen't exist"
 
             if len(all_category) == 0 :
                 return render_template('admin_dashboard.html', catgoryList = all_category, admin = admin, message = message)
@@ -200,6 +202,25 @@ def admin_dashboard(admin) :
                 db.session.commit()
                 return redirect(url_for('admin_dashboard', admin = admin))
 
+        elif form_name == 'category-edit-form' : 
+            category_to_edit = request.form['category-to-edit']
+            new_category_name = request.form['newCategoryName']
+
+            category_availability_check = Category.query.filter_by(name = category_to_edit.strip()).first()
+
+            if not category_availability_check : 
+                return redirect(url_for('admin_dashboard', admin = admin, error = 23))
+            else : 
+                old_category_name = category_availability_check.name
+                all_product_with_old_category_name = Product.query.filter_by(category = old_category_name).all()
+                for product in all_product_with_old_category_name : 
+                    product.category = new_category_name
+                
+                category_availability_check.name = new_category_name
+                db.session.commit()
+                return redirect(url_for('admin_dashboard', admin = admin)) 
+                 
+ 
         elif form_name == "product-delete-form" :
             product_to_delete = request.form['product']
             
