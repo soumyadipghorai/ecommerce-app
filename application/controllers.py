@@ -142,8 +142,10 @@ def admin_dashboard(admin) :
             errorCode = request.args.get('error')
             if errorCode is None : 
                 message = ""
-            else : 
+            elif int(errorCode) == 21 : 
                 message = "Can't delete category! Few products still available in the category"
+            elif int(errorCode) == 22 : 
+                message = "Can't delete product! Few units still available for the product"
 
             if len(all_category) == 0 :
                 return render_template('admin_dashboard.html', catgoryList = all_category, admin = admin, message = message)
@@ -195,6 +197,18 @@ def admin_dashboard(admin) :
 
             else : 
                 Category.query.filter_by(name=category_to_delete).delete()
+                db.session.commit()
+                return redirect(url_for('admin_dashboard', admin = admin))
+
+        elif form_name == "product-delete-form" :
+            product_to_delete = request.form['product']
+            
+            product_availability_check = Product.query.filter_by(name = product_to_delete.strip()).first()
+
+            if product_availability_check.quantity != 0 : 
+                return redirect(url_for('admin_dashboard', admin = admin, error = 22))
+            else : 
+                Product.query.filter_by(name= product_to_delete.strip()).delete()
                 db.session.commit()
                 return redirect(url_for('admin_dashboard', admin = admin))
 

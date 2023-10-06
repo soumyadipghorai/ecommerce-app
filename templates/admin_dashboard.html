@@ -5,6 +5,9 @@
         function deleteWarning(){
             alert('You are trying to delete a category');
         }
+        function deleteWarningProduct(){
+            alert('You are trying to delete a product');
+        }
 
         window.addEventListener('load', function(){
             const message = {{message|tojson}}; 
@@ -95,28 +98,35 @@
                 <div class="category-card-container">
                     {% for category in category_row %}
                         <div class="category-container bg-light mx-2 mt-3 p-3 border rounded-2">
+                            <h4 class="my-2">{{category}}</h4>
+                            <div class="poduct-container mb-2">
+                                {% for product in catgoryList[category] %}
+                                    {% if product['product-name'] %}
+                                        <div class="available-product p-2 rounded-2 my-2 row bg-body-secondary">
+                                            <div class="col-sm-5">
+                                                <p class="m-0">{{product['product-name']}}</p>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <p class="m-0 p-2 border rounded-2 bg-white" style="color: black;">{{product['product-quantity']}}</p>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <form action="" method = "POST">
+                                                    <input type="hidden" name="form_name" value="product-delete-form">
+                                                    <input type="hidden" name="product" value="{{product['product-name']}}">
+                                                    <input onclick="deleteWarningProduct()" class="btn btn-outline-danger mx-2" type="submit" value="Delete" id="{{product['product-name']}}">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    {% else %}
+                                    <div class="available-product p-2 rounded-2 my-2 row">
+                                        <p>No product available</p>
+                                    </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
                             <form action="" method = 'POST'>
                                 <input type="hidden" name="form_name" value="category-delete-form">
                                 <input type="hidden" name="category" value="{{category}}">
-                                <h4 class="my-2">{{category}}</h4>
-                                <div class="poduct-container mb-2">
-                                    {% for product in catgoryList[category] %}
-                                        {% if product['product-name'] %}
-                                            <div class="available-product p-2 rounded-2 my-2 row bg-body-secondary">
-                                                <div class="col-sm-9">
-                                                    <p class="m-0">{{product['product-name']}}</p>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <p class="m-0 p-2 border rounded-2 bg-white" style="color: black;">{{product['product-quantity']}}</p>
-                                                </div>
-                                            </div>
-                                        {% else %}
-                                        <div class="available-product p-2 rounded-2 my-2 row">
-                                            <p>No product available</p>
-                                        </div>
-                                        {% endif %}
-                                    {% endfor %}
-                                </div>
                                 <a class="btn btn-outline-warning" href="/add-product/{{admin}}?category={{category}}">Edit</a>
                                 <input onclick="deleteWarning()" class="btn btn-outline-danger mx-2" type="submit" value="Delete" id={{category}}>
                             </form>
