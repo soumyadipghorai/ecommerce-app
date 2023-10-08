@@ -2,6 +2,7 @@ from flask import Flask, request, render_template, redirect, url_for, session
 from flask import current_app as app 
 from application.models import User, Admin, Category, Product, Order, Cart
 from application.database import db
+from application.discount import Discount
 from datetime import date 
 import matplotlib.pyplot as plt
 import pandas as pd 
@@ -320,6 +321,8 @@ def product_page(username) :
                         'price' : product.price, 
                         'quantity' : product.quantity})
 
+            obj = Discount()
+            print(obj.find_discount_product())
             return render_template('products.html', name = username, prod_cat_dict = category_product_maping)
         else : 
             return redirect(url_for('login'))

@@ -46,3 +46,10 @@ class Cart(db.Model) :
     quantity = db.Column(db.Integer)
     price = db.Column(db.Integer)
     category = db.Column(db.String)
+
+class Offers(db.Model) : 
+    __tablename__ = 'offers'
+    offer_id = db.Column(db.Integer, primary_key = True, autoincrement = True)
+    product_name = db.Column(db.String)
+    category_name = db.Column(db.String)
+    discount = db.Column(db.Integer)
