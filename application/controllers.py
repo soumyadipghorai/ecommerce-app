@@ -1,14 +1,26 @@
 from flask import Flask, request, render_template, redirect, url_for, session
 from flask import current_app as app 
-from application.models import User, Admin, Category, Product, Order, Cart
+from application.models import User, Admin, Category, Product, Order, Cart, Offers
 from application.database import db
 from application.discount import Discount
 from datetime import date 
 import matplotlib.pyplot as plt
 import pandas as pd 
+import logging
 
 all_users = [user.username for user in User.query.all()]
 all_admin = [user.username for user in Admin.query.all()]
+
+logger2 = logging.getLogger('file2')
+logger2.setLevel(logging.DEBUG)
+
+file_handler2 = logging.FileHandler('logs/controller.log')
+file_handler2.setLevel(logging.DEBUG) 
+
+formatter = logging.Formatter('%(asctime)s [%(levelname)s] - %(message)s')
+file_handler2.setFormatter(formatter)
+
+logger2.addHandler(file_handler2)
 
 # @app.route('/', methods = ['GET', 'POST'])
 # def landing_page() : 
@@ -309,6 +321,10 @@ def dash_board(admin) :
 def product_page(username) : 
     if request.method == 'GET' : 
         if session['user'] == username : 
+            # update offer table 
+            obj = Discount()
+            obj.ingest_in_database()
+
             # filter products 
             category_product_maping = {}
             all_category = Category.query.all()
@@ -321,9 +337,17 @@ def product_page(username) :
                         'price' : product.price, 
                         'quantity' : product.quantity})
 
-            obj = Discount()
-            print(obj.find_discount_product())
-            return render_template('products.html', name = username, prod_cat_dict = category_product_maping)
+
+            all_offer = Offers.query.all()
+            offer_product = []
+            logger2.info(str(all_offer))
+            for offer in all_offer :
+                product_name = offer.product_name 
+                product_details = Product.query.filter_by(name = product_name).first()
+
+                offer_product.append((product_name, product_details.price, product_details.category, offer.discount))
+
+            return render_template('products.html', name = username, prod_cat_dict = category_product_maping, offer_details = offer_product)
         else : 
             return redirect(url_for('login'))
 
@@ -335,7 +359,6 @@ def product_page(username) :
 
         elif form_name == 'add_to_cart' : 
             product_name, product_category = request.form['product-name'].split('+')
-
             product_details = Product.query.filter_by(name = product_name.strip(), category = product_category.strip()).first()
 
             new_cart_item = Cart(

@@ -5536,3 +5536,1158 @@
 2023-10-08 01:46:07,450 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
 2023-10-08 01:46:08,800 WARNING werkzeug MainThread :  * Debugger is active!
 2023-10-08 01:46:08,801 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:12:40,907 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:12:40,927 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:12:40,927 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:12:40,927 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:12:41,038 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:12:41,050 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:12:45,913 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.159:8080
+2023-10-09 01:12:45,914 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-10-09 01:12:45,918 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:12:48,254 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:12:48,271 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:12:48,279 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:12:48,279 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:12:48,487 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:12:48,494 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:12:51,929 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:12:51,942 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:12:52,417 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:12:52] "[32mGET / HTTP/1.1[0m" 302 -
+2023-10-09 01:12:52,999 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:12:52] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:12:53,567 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:12:53] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:12:53,606 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:12:53] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:13:45,491 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:13:45,965 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:21:29,694 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:21:29,702 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:21:29,705 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:21:29,705 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:21:29,808 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:21:29,812 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:21:31,014 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.159:8080
+2023-10-09 01:21:31,014 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-10-09 01:21:31,017 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:21:32,156 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:21:32,164 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:21:32,166 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:21:32,166 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:21:32,286 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:21:32,298 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:21:33,183 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:21:33,184 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:21:33,272 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:21:33] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:21:33,453 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:21:33] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:21:33,453 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:21:33] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:22:50,832 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:22:50] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:22:50,869 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:22:50] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:22:51,081 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:22:51] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:23:10,363 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\controllers.py', reloading
+2023-10-09 01:23:10,704 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:23:12,643 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:23:12,651 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:23:12,654 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:23:12,654 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:23:12,733 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:23:12,734 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:23:13,652 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:23:13,662 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:23:13,884 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:23:13] "[35m[1mGET /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 01:23:13,972 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:23:13] "GET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-10-09 01:23:14,132 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:23:14] "GET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-10-09 01:23:14,575 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:23:14] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:23:14,838 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:23:14] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:23:41,036 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:23:41,359 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:23:42,610 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:23:42,617 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:23:42,619 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:23:42,619 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:23:42,711 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:23:42,713 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:23:43,841 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:23:43,842 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:23:49,772 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:23:50,146 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:23:51,956 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:23:51,969 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:23:51,971 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:23:51,971 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:23:52,069 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:23:52,076 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:23:53,122 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:23:53,122 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:23:55,465 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:23:55] "[35m[1mGET /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 01:23:55,544 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:23:55] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-09 01:23:55,684 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:23:55] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-09 01:23:56,076 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:23:56] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:23:56,324 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:23:56] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:24:20,744 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:24:21,069 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:24:22,371 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:24:22,374 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:24:22,374 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:24:22,374 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:24:22,454 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:24:22,457 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:24:23,763 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:24:23,766 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:24:26,706 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:24:26] "[35m[1mGET /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 01:24:26,792 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:24:26] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-09 01:24:26,904 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:24:26] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-09 01:24:27,299 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:24:27] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:24:27,572 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:24:27] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:24:37,497 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:24:37,938 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:24:39,727 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:24:39,734 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:24:39,736 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:24:39,736 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:24:39,815 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:24:39,821 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:24:40,889 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:24:40,894 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:24:40,977 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:24:40] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:24:41,061 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:24:41] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:24:41,152 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:24:41] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:25:03,608 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:25:03,957 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:25:05,554 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:25:05,572 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:25:05,579 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:25:05,579 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:25:05,737 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:25:05,739 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:25:07,131 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:25:07,142 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:25:08,682 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:25:08] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:25:08,852 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:25:08] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:25:08,903 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:25:08] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:25:41,416 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:25:41,862 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:25:43,729 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:25:43,735 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:25:43,736 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:25:43,736 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:25:43,836 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:25:43,843 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:25:44,872 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:25:44,873 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:25:45,959 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:25:45] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:25:46,252 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:25:46] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:25:46,255 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:25:46] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:26:27,350 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:26:27,826 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:26:29,450 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:26:29,457 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:26:29,457 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:26:29,457 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:26:29,549 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:26:29,550 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:26:30,826 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:26:30,826 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:26:32,529 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:26:32] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:26:32,609 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:26:32] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:26:32,761 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:26:32] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:26:38,990 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:26:39,301 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:26:40,735 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:26:40,735 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:26:40,735 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:26:40,735 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:26:40,819 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:26:40,826 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:26:42,087 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:26:42,088 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:26:42,190 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:26:42] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:26:42,267 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:26:42] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:26:42,275 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:26:42] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:27:06,275 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:27:06,598 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:27:07,865 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:27:07,868 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:27:07,875 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:27:07,875 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:27:07,943 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:27:07,945 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:27:08,839 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:27:08,844 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:27:16,564 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:27:16] "[35m[1mGET /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 01:27:16,666 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:27:16] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-09 01:27:16,670 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:27:16] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-09 01:27:17,008 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:27:17] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:27:17,275 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:27:17] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:27:46,507 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:27:46] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:27:46,549 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:27:46] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:27:46,866 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:27:46] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:30:26,537 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:30:26,940 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:30:28,871 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:30:28,875 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:30:28,875 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:30:28,875 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:30:28,978 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:30:28,978 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:30:30,077 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:30:30,084 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:30:56,447 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:30:56,789 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:30:58,142 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:30:58,149 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:30:58,149 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:30:58,149 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:30:58,221 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:30:58,225 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:30:59,628 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:30:59,629 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:31:02,843 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:31:02] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:31:02,917 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:31:02] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:31:03,068 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:31:03] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:35:25,966 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\controllers.py', reloading
+2023-10-09 01:35:26,448 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:35:28,809 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:35:28,835 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:35:28,840 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:35:28,840 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:35:29,021 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:35:29,027 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:35:30,695 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:35:30,705 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:35:36,813 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\controllers.py', reloading
+2023-10-09 01:35:37,265 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:35:38,941 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:35:38,955 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:35:38,956 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:35:38,956 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:35:39,041 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:35:39,050 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:35:39,931 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:35:39,940 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:35:51,329 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\controllers.py', reloading
+2023-10-09 01:35:51,859 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:35:54,010 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:35:54,019 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:35:54,021 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:35:54,021 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:35:54,098 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:35:54,101 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:35:55,192 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:35:55,194 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:36:45,868 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:36:45] "[35m[1mGET /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 01:36:46,104 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:36:46] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-09 01:36:46,111 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:36:46] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-09 01:36:46,460 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:36:46] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:36:46,711 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:36:46] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:37:04,372 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\controllers.py', reloading
+2023-10-09 01:37:04,769 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:37:06,036 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:37:06,044 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:37:06,044 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:37:06,044 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:37:06,135 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:37:06,140 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:37:07,600 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:37:07,611 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:37:07,811 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:37:07] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:37:07,922 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:37:07] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:37:07,925 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:37:07] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:39:53,262 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:39:53] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:39:53,318 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:39:53] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:39:53,322 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:39:53] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:40:21,645 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:40:21] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:40:21,702 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:40:21] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:40:21,792 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:40:21] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:40:45,765 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:40:45] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:40:45,814 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:40:45] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:40:45,932 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:40:45] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:40:48,505 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:40:48] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:40:48,542 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:40:48] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:40:48,727 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:40:48] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:41:16,247 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:41:16] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:41:16,293 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:41:16] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:41:16,422 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:41:16] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:41:32,585 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:41:32] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:41:32,632 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:41:32] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:41:32,723 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:41:32] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:42:03,652 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:42:03] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:42:03,673 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:42:03] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:42:03,854 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:42:03] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:42:16,877 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:42:16] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:42:16,923 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:42:16] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:42:17,052 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:42:17] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:42:24,695 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:42:24] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:42:24,765 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:42:24] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:42:24,897 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:42:24] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:43:24,815 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:43:24] "[35m[1mGET /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 01:43:24,845 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:43:24] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-09 01:43:24,845 INFO werkzeug Thread-34 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:43:24] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-09 01:43:25,188 INFO werkzeug Thread-35 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:43:25] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:43:25,444 INFO werkzeug Thread-36 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:43:25] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:44:15,714 INFO werkzeug Thread-37 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:44:15] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:44:15,976 INFO werkzeug Thread-38 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:44:15] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:44:16,063 INFO werkzeug Thread-39 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:44:16] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:45:42,133 INFO werkzeug Thread-40 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:45:42] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:45:42,175 INFO werkzeug Thread-41 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:45:42] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:45:42,293 INFO werkzeug Thread-42 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:45:42] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:45:56,228 INFO werkzeug Thread-43 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:45:56] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:45:56,324 INFO werkzeug Thread-44 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:45:56] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:45:56,329 INFO werkzeug Thread-45 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:45:56] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:46:12,605 INFO werkzeug Thread-46 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:46:12] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:46:12,668 INFO werkzeug Thread-47 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:46:12] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:46:12,797 INFO werkzeug Thread-48 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:46:12] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:46:19,293 INFO werkzeug Thread-49 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:46:19] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:46:19,337 INFO werkzeug Thread-50 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:46:19] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:46:19,492 INFO werkzeug Thread-51 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:46:19] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:47:06,526 INFO werkzeug Thread-52 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:47:06] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:47:06,577 INFO werkzeug Thread-53 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:47:06] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:47:06,693 INFO werkzeug Thread-54 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:47:06] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:47:19,963 INFO werkzeug Thread-55 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:47:19] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:47:20,005 INFO werkzeug Thread-56 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:47:20] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:47:20,133 INFO werkzeug Thread-57 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:47:20] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:47:31,578 INFO werkzeug Thread-58 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:47:31] "GET /buy-product/ghorai?product-name=apple HTTP/1.1" 200 -
+2023-10-09 01:47:31,764 INFO werkzeug Thread-59 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:47:31] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:47:31,994 INFO werkzeug Thread-60 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:47:31] "GET /static/buy_product.css HTTP/1.1" 200 -
+2023-10-09 01:48:11,337 INFO werkzeug Thread-61 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:48:11] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:48:11,363 INFO werkzeug Thread-62 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:48:11] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:48:11,675 INFO werkzeug Thread-63 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:48:11] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:48:50,615 INFO werkzeug Thread-64 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:48:50] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:48:50,657 INFO werkzeug Thread-65 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:48:50] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:48:50,773 INFO werkzeug Thread-66 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:48:50] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:49:02,825 INFO werkzeug Thread-67 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:49:02] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:49:02,873 INFO werkzeug Thread-68 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:49:02] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:49:02,995 INFO werkzeug Thread-69 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:49:02] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:49:13,882 INFO werkzeug Thread-70 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:49:13] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:49:13,924 INFO werkzeug Thread-71 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:49:13] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:49:14,052 INFO werkzeug Thread-72 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:49:14] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:49:35,893 INFO werkzeug Thread-73 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:49:35] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:49:35,924 INFO werkzeug Thread-74 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:49:35] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:49:36,056 INFO werkzeug Thread-75 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:49:36] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:49:55,638 INFO werkzeug Thread-76 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:49:55] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:49:55,685 INFO werkzeug Thread-77 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:49:55] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:49:55,803 INFO werkzeug Thread-78 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:49:55] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:50:13,512 INFO werkzeug Thread-79 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:50:13] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:50:13,544 INFO werkzeug Thread-80 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:50:13] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:50:13,738 INFO werkzeug Thread-81 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:50:13] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:50:27,795 INFO werkzeug Thread-82 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:50:27] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:50:27,865 INFO werkzeug Thread-83 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:50:27] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:50:27,935 INFO werkzeug Thread-84 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:50:27] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:50:43,558 INFO werkzeug Thread-85 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:50:43] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:50:43,613 INFO werkzeug Thread-86 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:50:43] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:50:43,774 INFO werkzeug Thread-87 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:50:43] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:51:30,744 INFO werkzeug Thread-88 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:51:30] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:51:30,784 INFO werkzeug Thread-89 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:51:30] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:51:30,972 INFO werkzeug Thread-90 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:51:30] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:51:38,892 INFO werkzeug Thread-91 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:51:38] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:51:38,933 INFO werkzeug Thread-92 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:51:38] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:51:39,066 INFO werkzeug Thread-93 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:51:39] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:51:50,888 INFO werkzeug Thread-94 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:51:50] "[35m[1mPOST /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 01:51:50,929 INFO werkzeug Thread-95 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:51:50] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-09 01:51:51,032 INFO werkzeug Thread-96 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:51:51] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-09 01:51:51,365 INFO werkzeug Thread-97 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:51:51] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:51:51,632 INFO werkzeug Thread-98 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:51:51] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:52:04,153 INFO werkzeug Thread-99 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:52:04] "GET /cart/ghorai HTTP/1.1" 200 -
+2023-10-09 01:52:04,221 INFO werkzeug Thread-100 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:52:04] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:52:04,546 INFO werkzeug Thread-101 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:52:04] "GET /static/user_login.css HTTP/1.1" 200 -
+2023-10-09 01:52:44,831 INFO werkzeug Thread-102 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:52:44] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:52:44,853 INFO werkzeug Thread-103 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:52:44] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:52:45,172 INFO werkzeug Thread-104 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:52:45] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:52:47,898 INFO werkzeug Thread-105 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:52:47] "[35m[1mPOST /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 01:52:47,924 INFO werkzeug Thread-106 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:52:47] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-09 01:52:48,122 INFO werkzeug Thread-107 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:52:48] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-09 01:52:48,455 INFO werkzeug Thread-108 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:52:48] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:52:48,715 INFO werkzeug Thread-109 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:52:48] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:53:23,976 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\controllers.py', reloading
+2023-10-09 01:53:24,345 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:53:25,904 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:53:25,909 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:53:25,912 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:53:25,912 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:53:25,993 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:53:25,995 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:53:26,772 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:53:26,782 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:53:26,900 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:26] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:53:27,032 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:27] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:53:27,032 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:27] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:53:30,670 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:30] "[32mPOST /products/ghorai HTTP/1.1[0m" 302 -
+2023-10-09 01:53:30,755 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:30] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:53:31,032 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:31] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:53:31,342 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:31] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:53:39,164 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:39] "[32mPOST /products/ghorai HTTP/1.1[0m" 302 -
+2023-10-09 01:53:39,236 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:39] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:53:39,393 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:39] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:53:39,621 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:39] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:53:41,803 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:41] "GET /cart/ghorai HTTP/1.1" 200 -
+2023-10-09 01:53:42,084 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:42] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:53:42,170 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:53:42] "[36mGET /static/user_login.css HTTP/1.1[0m" 304 -
+2023-10-09 01:53:59,292 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\controllers.py', reloading
+2023-10-09 01:53:59,674 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:54:01,826 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:54:01,842 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:54:01,847 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:54:01,847 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:54:01,968 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:54:01,971 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:54:02,834 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:54:02,839 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:55:11,879 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:55:12,234 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:55:13,875 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:55:13,895 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:55:13,895 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:55:13,900 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:55:14,075 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:55:14,085 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:55:15,792 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:55:15,805 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:56:49,939 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:56:50,344 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:56:51,882 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:56:51,896 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:56:51,902 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:56:51,902 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:56:52,046 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:56:52,052 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:56:53,174 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:56:53,181 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:57:10,104 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\controllers.py', reloading
+2023-10-09 01:57:10,617 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:57:12,344 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:57:12,351 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:57:12,352 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:57:12,352 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:57:12,441 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:57:12,444 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:57:13,334 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:57:13,339 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:57:17,337 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:57:17] "[35m[1mGET /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 01:57:17,506 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:57:17] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-09 01:57:17,539 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:57:17] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-09 01:57:17,884 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:57:17] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:57:18,130 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:57:18] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 01:57:36,939 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:57:37,543 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:57:38,974 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:57:38,983 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:57:38,984 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:57:38,984 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:57:39,056 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:57:39,059 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:57:40,063 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:57:40,063 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:57:40,176 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:57:40] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:57:40,353 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:57:40] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:57:40,356 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:57:40] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:57:50,415 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:57:50] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:57:50,462 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:57:50] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:57:50,639 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:57:50] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:58:08,992 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 01:58:09,382 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:58:11,627 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:58:11,634 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:58:11,643 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:58:11,643 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:58:11,721 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:58:11,723 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:58:12,785 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:58:12,788 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:58:14,865 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:58:14] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:58:15,004 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:58:15] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:58:15,044 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:58:15] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:58:34,662 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:58:34] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:58:34,727 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:58:34] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:58:34,862 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:58:34] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:59:34,399 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\controllers.py', reloading
+2023-10-09 01:59:34,903 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 01:59:36,664 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 01:59:36,675 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:59:36,679 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 01:59:36,681 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 01:59:36,767 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 01:59:36,772 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 01:59:37,622 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 01:59:37,624 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 01:59:37,924 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:59:37] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:59:38,105 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:59:38] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:59:38,174 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:59:38] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 01:59:45,615 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:59:45] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 01:59:45,632 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:59:45] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 01:59:45,844 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 01:59:45] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:25:57,113 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:25:57,121 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:25:57,123 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:25:57,124 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:25:57,283 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:25:57,289 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:25:58,840 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.159:8080
+2023-10-09 12:25:58,840 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-10-09 12:25:58,847 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:26:00,117 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:26:00,119 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:26:00,119 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:26:00,119 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:26:00,247 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:26:00,257 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:26:02,577 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:26:02,598 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:26:02,952 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:26:02] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:26:03,158 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:26:03] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:26:03,158 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:26:03] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:26:54,551 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:26:54] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:26:54,597 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:26:54] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:26:54,717 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:26:54] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:27:24,412 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:27:24] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:27:24,483 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:27:24] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:27:24,567 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:27:24] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:27:50,642 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:27:50] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:27:50,667 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:27:50] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:27:50,667 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:27:50] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:28:01,712 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:28:01] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:28:01,783 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:28:01] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:28:01,892 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:28:01] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:28:26,457 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:28:26] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:28:26,486 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:28:26] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:28:26,657 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:28:26] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:28:36,353 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:28:36] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:28:36,381 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:28:36] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:28:36,530 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:28:36] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:28:51,830 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:28:51] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:28:51,904 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:28:51] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:28:51,987 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:28:51] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:31:45,901 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:31:45] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:31:45,933 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:31:45] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:31:46,057 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:31:46] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:32:30,339 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:32:30] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:32:30,394 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:32:30] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:32:30,531 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:32:30] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:38:46,702 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:38:47,085 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:38:49,157 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:38:49,168 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:38:49,175 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:38:49,175 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:38:49,531 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:38:49,536 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:38:50,739 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:38:50,747 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:38:55,266 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:38:55] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:38:55,354 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:38:55] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:38:55,423 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:38:55] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:39:00,567 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:00] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:39:00,610 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:00] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:39:00,764 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:00] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:39:03,529 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:03] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:39:03,573 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:03] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:39:03,740 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:03] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:39:06,720 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:06] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:39:06,783 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:06] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:39:06,916 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:06] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:39:09,640 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:09] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:39:09,688 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:09] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:39:09,819 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:09] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:39:29,334 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:39:29,688 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:39:30,929 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:39:30,937 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:39:30,937 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:39:30,937 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:39:31,008 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:39:31,010 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:39:32,309 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:39:32,317 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:39:33,087 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:33] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:39:33,223 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:33] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:39:33,241 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:39:33] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:40:29,756 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:40:29] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:40:29,785 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:40:29] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:40:29,980 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:40:29] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:42:35,261 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:42:35,569 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:42:37,096 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:42:37,096 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:42:37,105 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:42:37,105 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:42:37,176 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:42:37,179 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:42:38,468 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:42:38,474 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:42:47,008 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:42:47,323 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:42:48,980 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:42:48,987 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:42:48,990 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:42:48,990 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:42:49,066 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:42:49,068 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:42:49,907 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:42:49,907 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:42:50,726 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:42:50] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:42:50,807 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:42:50] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:42:50,896 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:42:50] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:42:52,863 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:42:52] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:42:52,921 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:42:52] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:42:53,069 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:42:53] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:42:54,846 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:42:54] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:42:54,887 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:42:54] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:42:55,068 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:42:55] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:42:56,970 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:42:56] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:42:57,030 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:42:57] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:42:57,199 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:42:57] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:43:04,836 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:04] "[32mPOST /products/ghorai HTTP/1.1[0m" 302 -
+2023-10-09 12:43:04,920 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:04] "GET / HTTP/1.1" 200 -
+2023-10-09 12:43:05,105 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:05] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:43:05,346 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:05] "[36mGET /static/user_login.css HTTP/1.1[0m" 304 -
+2023-10-09 12:43:09,275 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:09] "GET /admin-login HTTP/1.1" 200 -
+2023-10-09 12:43:09,504 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:09] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:43:09,666 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:09] "[36mGET /static/user_login.css HTTP/1.1[0m" 304 -
+2023-10-09 12:43:15,567 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:15] "[32mPOST /admin-login HTTP/1.1[0m" 302 -
+2023-10-09 12:43:15,929 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:15] "GET /admin-dashboard/admin-1 HTTP/1.1" 200 -
+2023-10-09 12:43:16,313 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:16] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:43:16,358 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:16] "GET /static/admin_dashboard.css HTTP/1.1" 200 -
+2023-10-09 12:43:25,677 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:25] "[32mPOST /admin-dashboard/admin-1 HTTP/1.1[0m" 302 -
+2023-10-09 12:43:25,982 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:25] "GET /admin-dashboard/admin-1?error=22 HTTP/1.1" 200 -
+2023-10-09 12:43:26,402 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:26] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:43:26,406 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:26] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+2023-10-09 12:43:36,664 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:36] "GET /add-product/admin-1?category=cake HTTP/1.1" 200 -
+2023-10-09 12:43:36,960 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:36] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:43:37,055 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:37] "GET /static/add_product.css HTTP/1.1" 200 -
+2023-10-09 12:43:45,610 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:45] "GET /add-product/admin-1?category=cake HTTP/1.1" 200 -
+2023-10-09 12:43:45,738 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:45] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:43:46,049 INFO werkzeug Thread-34 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:46] "[36mGET /static/add_product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:43:57,190 INFO werkzeug Thread-35 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:57] "[32mPOST /add-product/admin-1?category=cake HTTP/1.1[0m" 302 -
+2023-10-09 12:43:57,236 INFO werkzeug Thread-36 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:57] "GET /admin-dashboard/admin-1 HTTP/1.1" 200 -
+2023-10-09 12:43:57,418 INFO werkzeug Thread-37 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:57] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:43:57,649 INFO werkzeug Thread-38 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:43:57] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:04,729 INFO werkzeug Thread-39 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:04] "GET /add-product/admin-1?category=fruit HTTP/1.1" 200 -
+2023-10-09 12:44:05,031 INFO werkzeug Thread-40 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:05] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:05,132 INFO werkzeug Thread-41 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:05] "[36mGET /static/add_product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:14,486 INFO werkzeug Thread-42 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:14] "[32mPOST /add-product/admin-1?category=fruit HTTP/1.1[0m" 302 -
+2023-10-09 12:44:14,530 INFO werkzeug Thread-43 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:14] "GET /admin-dashboard/admin-1 HTTP/1.1" 200 -
+2023-10-09 12:44:14,718 INFO werkzeug Thread-44 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:14] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:14,941 INFO werkzeug Thread-45 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:14] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:24,250 INFO werkzeug Thread-46 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:24] "GET /add-product/admin-1?category=Non%20Veg HTTP/1.1" 200 -
+2023-10-09 12:44:24,547 INFO werkzeug Thread-47 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:24] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:24,620 INFO werkzeug Thread-48 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:24] "[36mGET /static/add_product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:35,391 INFO werkzeug Thread-49 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:35] "[32mPOST /add-product/admin-1?category=Non%20Veg HTTP/1.1[0m" 302 -
+2023-10-09 12:44:35,440 INFO werkzeug Thread-50 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:35] "GET /admin-dashboard/admin-1 HTTP/1.1" 200 -
+2023-10-09 12:44:35,630 INFO werkzeug Thread-51 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:35] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:35,886 INFO werkzeug Thread-52 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:35] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:40,198 INFO werkzeug Thread-53 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:40] "[32mPOST /admin-dashboard/admin-1 HTTP/1.1[0m" 302 -
+2023-10-09 12:44:40,212 INFO werkzeug Thread-54 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:40] "GET /admin-login HTTP/1.1" 200 -
+2023-10-09 12:44:40,462 INFO werkzeug Thread-55 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:40] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:40,604 INFO werkzeug Thread-56 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:40] "[36mGET /static/user_login.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:45,069 INFO werkzeug Thread-57 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:45] "GET / HTTP/1.1" 200 -
+2023-10-09 12:44:45,159 INFO werkzeug Thread-58 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:45] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:45,320 INFO werkzeug Thread-59 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:45] "[36mGET /static/user_login.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:51,039 INFO werkzeug Thread-60 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:51] "[32mPOST / HTTP/1.1[0m" 302 -
+2023-10-09 12:44:51,070 INFO werkzeug Thread-61 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:51] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:44:51,277 INFO werkzeug Thread-62 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:51] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:51,469 INFO werkzeug Thread-63 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:51] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:57,058 INFO werkzeug Thread-64 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:57] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:44:57,097 INFO werkzeug Thread-65 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:57] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:57,272 INFO werkzeug Thread-66 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:57] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:59,536 INFO werkzeug Thread-67 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:59] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:44:59,587 INFO werkzeug Thread-68 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:59] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:44:59,749 INFO werkzeug Thread-69 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:44:59] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:46:47,623 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:46:48,054 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:46:49,406 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:46:49,430 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:46:49,436 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:46:49,436 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:46:49,571 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:46:49,572 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:46:51,153 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:46:51,169 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:46:54,912 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:46:55,225 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:46:56,506 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:46:56,516 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:46:56,518 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:46:56,518 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:46:56,616 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:46:56,621 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:46:58,017 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:46:58,022 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:46:59,914 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:46:59] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:46:59,997 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:46:59] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:47:00,096 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:47:00] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:47:42,935 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:47:43,351 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:47:45,163 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:47:45,167 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:47:45,171 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:47:45,171 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:47:45,249 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:47:45,252 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:47:46,041 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:47:46,045 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:47:46,339 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:47:46] "[35m[1mGET /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 12:47:46,456 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:47:46] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-09 12:47:46,509 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:47:46] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-09 12:47:46,836 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:47:46] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 12:47:47,095 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:47:47] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 12:48:06,582 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:48:06,928 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:48:08,217 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:48:08,226 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:48:08,230 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:48:08,230 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:48:08,311 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:48:08,316 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:48:09,100 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:48:09,102 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:48:09,181 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:48:09] "[35m[1mGET /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 12:48:09,286 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:48:09] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-09 12:48:09,287 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:48:09] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-09 12:48:09,616 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:48:09] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 12:48:09,869 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:48:09] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 12:48:46,718 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:48:47,099 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:48:48,361 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:48:48,367 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:48:48,370 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:48:48,370 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:48:48,446 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:48:48,446 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:48:49,280 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:48:49,280 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:48:49,346 DEBUG root Thread-2 (process_request_thread) : {'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 12:48:49,421 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:48:49] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:48:49,560 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:48:49] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:48:49,563 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:48:49] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:49:23,699 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:49:24,197 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:49:25,559 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:49:25,568 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:49:25,568 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:49:25,568 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:49:25,669 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:49:25,675 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:49:26,769 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:49:26,775 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:49:32,566 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:49:32,925 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:49:34,597 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:49:34,597 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:49:34,605 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:49:34,605 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:49:34,696 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:49:34,703 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:49:35,797 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:49:35,802 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:49:38,207 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:49:38] "[35m[1mGET /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 12:49:38,295 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:49:38] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-09 12:49:38,446 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:49:38] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-09 12:49:38,790 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:49:38] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 12:49:39,060 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:49:39] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 12:49:57,652 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:49:58,026 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:49:59,745 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:49:59,749 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:49:59,749 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:49:59,749 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:49:59,826 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:49:59,829 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:50:00,585 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:50:00,587 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:50:00,649 INFO root Thread-2 (process_request_thread) : {'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 12:50:00,676 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:00] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:50:00,766 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:00] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:50:00,786 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:00] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:50:15,744 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:50:16,390 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:50:17,766 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:50:17,778 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:50:17,781 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:50:17,781 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:50:17,883 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:50:17,886 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:50:18,966 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:50:18,969 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:50:23,759 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:50:24,103 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:50:27,095 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:50:27,110 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:50:27,110 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:50:27,110 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:50:27,240 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:50:27,240 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:50:28,713 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:50:28,718 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:50:32,249 INFO root Thread-2 (process_request_thread) : {'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 12:50:32,368 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:32] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:50:32,556 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:32] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:50:32,629 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:32] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:50:37,988 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:37] "[32mPOST /products/ghorai HTTP/1.1[0m" 302 -
+2023-10-09 12:50:37,999 INFO root Thread-6 (process_request_thread) : {'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 12:50:38,011 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:38] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:50:38,190 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:38] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:50:38,357 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:38] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:50:40,930 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:40] "GET /cart/ghorai HTTP/1.1" 200 -
+2023-10-09 12:50:41,222 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:41] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:50:41,526 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:41] "[36mGET /static/user_login.css HTTP/1.1[0m" 304 -
+2023-10-09 12:50:47,093 INFO root Thread-12 (process_request_thread) : {'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 12:50:47,107 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:47] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:50:47,352 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:47] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:50:47,478 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:50:47] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:51:04,331 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:51:04] "[32mGET / HTTP/1.1[0m" 302 -
+2023-10-09 12:51:04,589 INFO root Thread-16 (process_request_thread) : {'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 12:51:04,616 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:51:04] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:51:04,661 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:51:04] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:51:04,962 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:51:04] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:52:30,046 INFO root Thread-20 (process_request_thread) : {'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 12:52:30,080 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:52:30] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:52:30,121 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:52:30] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:52:30,296 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:52:30] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:52:53,883 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:52:54,266 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:52:55,579 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:52:55,589 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:52:55,589 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:52:55,589 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:52:55,659 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:52:55,659 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:52:56,507 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:52:56,507 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:52:56,606 INFO root Thread-2 (process_request_thread) : {'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 12:52:56,631 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:52:56] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:52:56,700 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:52:56] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:52:56,860 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:52:56] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:53:58,548 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:53:58,906 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:54:00,327 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:54:00,334 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:54:00,337 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:54:00,337 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:54:00,442 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:54:00,446 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:54:01,271 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:54:01,276 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:54:02,318 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:54:02] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:54:02,457 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:54:02] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:54:02,457 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:54:02] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:54:11,637 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:54:11] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:54:11,658 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:54:11] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:54:11,830 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:54:11] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:55:08,418 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:55:08,856 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:55:10,166 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:55:10,172 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:55:10,172 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:55:10,172 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:55:10,248 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:55:10,253 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:55:11,199 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:55:11,207 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:55:11,351 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:55:11] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:55:11,432 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:55:11] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:55:11,435 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:55:11] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:55:41,440 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:55:41,847 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:55:43,126 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:55:43,129 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:55:43,129 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:55:43,129 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:55:43,203 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:55:43,208 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:55:43,915 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:55:43,916 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:55:45,093 INFO root Thread-2 (process_request_thread) : {'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 12:55:45,119 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:55:45] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:55:45,200 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:55:45] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:55:45,346 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:55:45] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 12:56:42,087 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:56:42,376 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:56:44,619 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:56:44,626 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:56:44,626 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:56:44,626 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:56:44,696 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:56:44,698 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:56:45,476 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:56:45,477 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:59:15,068 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:59:15,356 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:59:16,625 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:59:16,637 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:59:16,644 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:59:16,644 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:59:16,738 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:59:16,745 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:59:17,736 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:59:17,740 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:59:46,036 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 12:59:46,376 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 12:59:47,597 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 12:59:47,605 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:59:47,606 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 12:59:47,607 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 12:59:47,680 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 12:59:47,682 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 12:59:48,559 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 12:59:48,563 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 12:59:49,414 INFO file1 Thread-2 (process_request_thread) : {'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 12:59:49,462 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:59:49] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 12:59:49,551 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:59:49] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 12:59:49,657 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 12:59:49] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:00:08,156 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 13:00:08,445 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 13:00:09,756 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 13:00:09,764 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:00:09,765 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 13:00:09,765 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 13:00:09,835 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:00:09,845 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 13:00:10,645 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 13:00:10,645 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 13:00:11,016 INFO file1 Thread-2 (process_request_thread) : {'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:00:11,060 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:00:11] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:00:11,187 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:00:11] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:00:11,255 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:00:11] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:00:52,614 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 13:00:52,867 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 13:00:54,524 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 13:00:54,536 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:00:54,536 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 13:00:54,536 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 13:00:54,616 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:00:54,620 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 13:00:55,798 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 13:00:55,799 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 13:01:40,624 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 13:01:40,895 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 13:01:42,802 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 13:01:42,812 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:01:42,814 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 13:01:42,815 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 13:01:45,788 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:01:46,026 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 13:01:53,635 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 13:01:53,639 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 13:01:53,815 INFO file1 Thread-2 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:01:53,855 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:01:53] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:01:53,984 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:01:53] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:01:54,195 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:01:54] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:03:07,220 INFO file1 Thread-5 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:03:08,151 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:03:08] "[35m[1mGET /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 13:03:08,176 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:03:08] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-09 13:03:08,177 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:03:08] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-09 13:03:08,505 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:03:08] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 13:03:08,769 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:03:08] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 13:03:55,131 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\controllers.py', reloading
+2023-10-09 13:03:55,375 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 13:03:56,847 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 13:03:56,863 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:03:56,865 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 13:03:56,865 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 13:03:56,957 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:03:56,963 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 13:03:57,834 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 13:03:57,836 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 13:04:21,834 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\controllers.py', reloading
+2023-10-09 13:04:22,075 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 13:04:23,055 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 13:04:23,067 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:04:23,067 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 13:04:23,067 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 13:04:23,144 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:04:23,149 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 13:04:25,698 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 13:04:25,705 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:04:25,705 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 13:04:25,705 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 13:04:25,764 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:04:25,775 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 13:05:17,922 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 13:05:17,924 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:05:17,924 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 13:05:17,924 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 13:05:17,995 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:05:17,999 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 13:05:40,245 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 13:05:40,254 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:05:40,256 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 13:05:40,256 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 13:05:40,325 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:05:40,325 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 13:05:41,066 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.159:8080
+2023-10-09 13:05:41,066 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-10-09 13:05:41,066 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 13:05:42,236 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 13:05:42,251 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:05:42,255 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 13:05:42,255 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 13:05:42,345 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:05:42,348 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 13:05:43,176 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 13:05:43,185 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 13:05:47,687 INFO file1 Thread-2 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:05:47,702 INFO file2 Thread-2 (process_request_thread) : [<Offers 0>, <Offers 154>, <Offers 162>, <Offers 163>, <Offers 164>]
+2023-10-09 13:05:47,722 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:05:47] "[35m[1mGET /products/ghorai HTTP/1.1[0m" 500 -
+2023-10-09 13:05:47,831 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:05:47] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-10-09 13:05:48,071 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:05:48] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-10-09 13:05:48,462 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:05:48] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 13:05:48,720 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:05:48] "[36mGET /products/ghorai?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-10-09 13:07:28,249 INFO file1 Thread-8 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:07:28,625 INFO file2 Thread-8 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:07:28,644 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:07:28] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:07:28,668 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:07:28] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:07:28,672 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:07:28] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:07:34,660 INFO file1 Thread-11 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:07:34,671 INFO file2 Thread-11 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:07:34,676 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:07:34] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:07:34,707 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:07:34] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:07:34,928 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:07:34] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:07:37,058 INFO file1 Thread-14 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:07:37,068 INFO file2 Thread-14 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:07:37,072 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:07:37] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:07:37,099 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:07:37] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:07:37,320 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:07:37] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:08:00,788 INFO file1 Thread-17 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:08:00,798 INFO file2 Thread-17 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:08:00,803 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:08:00] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:08:00,836 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:08:00] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:08:01,052 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:08:01] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:09:16,155 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\discount.py', reloading
+2023-10-09 13:09:16,396 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 13:09:17,386 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 13:09:17,395 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:09:17,395 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 13:09:17,395 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 13:09:17,479 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:09:17,483 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 13:09:18,268 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 13:09:18,274 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 13:10:15,816 INFO werkzeug MainThread :  * Detected change in 'D:\\Desktop\\visual studio\\end to end\\ecommerceApp\\application\\controllers.py', reloading
+2023-10-09 13:10:16,096 INFO werkzeug MainThread :  * Restarting with stat
+2023-10-09 13:10:17,335 DEBUG matplotlib MainThread : matplotlib data path: D:\Desktop\visual studio\end to end\ecommerceApp\env\lib\site-packages\matplotlib\mpl-data
+2023-10-09 13:10:17,346 DEBUG matplotlib MainThread : CONFIGDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:10:17,346 DEBUG matplotlib MainThread : interactive is False
+2023-10-09 13:10:17,346 DEBUG matplotlib MainThread : platform is win32
+2023-10-09 13:10:17,426 DEBUG matplotlib MainThread : CACHEDIR=C:\Users\Computer\.matplotlib
+2023-10-09 13:10:17,426 DEBUG matplotlib.font_manager MainThread : Using fontManager instance from C:\Users\Computer\.matplotlib\fontlist-v330.json
+2023-10-09 13:10:18,235 WARNING werkzeug MainThread :  * Debugger is active!
+2023-10-09 13:10:18,246 INFO werkzeug MainThread :  * Debugger PIN: 136-628-248
+2023-10-09 13:10:36,296 INFO file1 Thread-2 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:10:36,316 INFO file2 Thread-2 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:10:36,339 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:10:36] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:10:36,426 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:10:36] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:10:36,547 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:10:36] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:11:33,965 INFO file1 Thread-5 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:11:33,975 INFO file2 Thread-5 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:11:33,995 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:11:33] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:11:34,035 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:11:34] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:11:34,217 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:11:34] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:11:52,994 INFO file1 Thread-8 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:11:53,015 INFO file2 Thread-8 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:11:53,040 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:11:53] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:11:53,065 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:11:53] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:11:53,254 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:11:53] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:12:00,435 INFO file1 Thread-11 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:12:00,447 INFO file2 Thread-11 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:12:00,481 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:12:00] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:12:00,505 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:12:00] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:12:00,698 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:12:00] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:12:28,567 INFO file1 Thread-14 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:12:28,576 INFO file2 Thread-14 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:12:28,585 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:12:28] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:12:28,616 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:12:28] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:12:28,807 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:12:28] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:12:53,665 INFO file1 Thread-17 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:12:53,674 INFO file2 Thread-17 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:12:53,695 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:12:53] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:12:53,724 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:12:53] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:12:53,924 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:12:53] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:13:07,370 INFO file1 Thread-20 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:13:07,379 INFO file2 Thread-20 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:13:07,398 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:13:07] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:13:07,425 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:13:07] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:13:07,617 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:13:07] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:13:25,067 INFO file1 Thread-23 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:13:25,087 INFO file2 Thread-23 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:13:25,115 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:13:25] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:13:25,136 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:13:25] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:13:25,315 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:13:25] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:13:40,857 INFO file1 Thread-26 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:13:40,869 INFO file2 Thread-26 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:13:40,885 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:13:40] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:13:40,916 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:13:40] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:13:41,124 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:13:41] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:14:06,367 INFO file1 Thread-29 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:14:06,379 INFO file2 Thread-29 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:14:06,399 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:14:06] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:14:06,425 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:14:06] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:14:06,625 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:14:06] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:14:32,216 INFO file1 Thread-32 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:14:32,225 INFO file2 Thread-32 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:14:32,246 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:14:32] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:14:32,266 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:14:32] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:14:32,467 INFO werkzeug Thread-34 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:14:32] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:14:46,690 INFO file1 Thread-35 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:14:46,700 INFO file2 Thread-35 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:14:46,733 INFO werkzeug Thread-35 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:14:46] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:14:46,762 INFO werkzeug Thread-36 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:14:46] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:14:46,941 INFO werkzeug Thread-37 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:14:46] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:14:59,832 INFO file1 Thread-38 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:14:59,843 INFO file2 Thread-38 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:14:59,860 INFO werkzeug Thread-38 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:14:59] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:14:59,882 INFO werkzeug Thread-39 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:14:59] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:15:00,082 INFO werkzeug Thread-40 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:15:00] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:15:08,243 INFO file1 Thread-41 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:15:08,262 INFO file2 Thread-41 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:15:08,285 INFO werkzeug Thread-41 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:15:08] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:15:08,310 INFO werkzeug Thread-42 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:15:08] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:15:08,501 INFO werkzeug Thread-43 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:15:08] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:15:18,106 INFO file1 Thread-44 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:15:18,118 INFO file2 Thread-44 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:15:18,137 INFO werkzeug Thread-44 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:15:18] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:15:18,166 INFO werkzeug Thread-45 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:15:18] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:15:18,378 INFO werkzeug Thread-46 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:15:18] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:15:30,490 INFO file1 Thread-47 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:15:30,501 INFO file2 Thread-47 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:15:30,520 INFO werkzeug Thread-47 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:15:30] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:15:30,541 INFO werkzeug Thread-48 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:15:30] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:15:30,742 INFO werkzeug Thread-49 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:15:30] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:16:21,271 INFO file1 Thread-50 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:16:21,282 INFO file2 Thread-50 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:16:21,290 INFO werkzeug Thread-50 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:16:21] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:16:21,333 INFO werkzeug Thread-51 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:16:21] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:16:21,525 INFO werkzeug Thread-52 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:16:21] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:16:39,941 INFO file1 Thread-53 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:16:39,952 INFO file2 Thread-53 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:16:39,973 INFO werkzeug Thread-53 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:16:39] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:16:40,005 INFO werkzeug Thread-54 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:16:40] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:16:40,201 INFO werkzeug Thread-55 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:16:40] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:16:51,981 INFO file1 Thread-56 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:16:51,982 INFO file2 Thread-56 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:16:52,002 INFO werkzeug Thread-56 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:16:52] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:16:52,032 INFO werkzeug Thread-57 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:16:52] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:16:52,233 INFO werkzeug Thread-58 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:16:52] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:17:55,476 INFO file1 Thread-59 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:17:55,486 INFO file2 Thread-59 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:17:55,506 INFO werkzeug Thread-59 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:17:55] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:17:55,535 INFO werkzeug Thread-60 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:17:55] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:17:55,748 INFO werkzeug Thread-61 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:17:55] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:18:24,804 INFO file1 Thread-62 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:18:24,834 INFO file2 Thread-62 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:18:24,861 INFO werkzeug Thread-62 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:18:24] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:18:24,892 INFO werkzeug Thread-63 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:18:24] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:18:25,050 INFO werkzeug Thread-64 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:18:25] "[36mGET /static/product.css HTTP/1.1[0m" 304 -
+2023-10-09 13:18:35,939 INFO file1 Thread-65 (process_request_thread) : filtered products for discount{'apple': {'category': 'fruit', 'discount': 25}, 'Fish': {'category': 'Non Veg', 'discount': 25}, 'orange': {'category': 'fruit', 'discount': 15}, 'belgium chocolate cake': {'category': 'cake', 'discount': 25}}
+2023-10-09 13:18:35,949 INFO file2 Thread-65 (process_request_thread) : [<Offers 1>, <Offers 2>, <Offers 3>]
+2023-10-09 13:18:35,968 INFO werkzeug Thread-65 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:18:35] "GET /products/ghorai HTTP/1.1" 200 -
+2023-10-09 13:18:35,995 INFO werkzeug Thread-66 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:18:35] "[36mGET /static/base_template.css HTTP/1.1[0m" 304 -
+2023-10-09 13:18:36,205 INFO werkzeug Thread-67 (process_request_thread) : 127.0.0.1 - - [09/Oct/2023 13:18:36] "[36mGET /static/product.css HTTP/1.1[0m" 304 -

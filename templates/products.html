@@ -32,6 +32,37 @@
         </div>
         <div class="col-sm-6 image-section"></div>
     </div>
+    <div class="offer-container mt-5 bg-light p-5">
+        <div class="row">
+            <div class="col">
+                <h2>Offer Section</h2>
+                <button class="btn btn-danger" type="button" disabled>
+                    <span class="spinner-grow spinner-grow-sm text-warning" aria-hidden="true"></span>
+                    <span class="visually-hidden" role="status">Loading...</span>
+                </button>
+            </div>
+            {% for offer in offer_details %}
+                <div class="col-sm-3 rounded-2 border-1 bg-black bg-gradient bg-opacity-75 m-3 p-3 position-relative">
+                    <h4 style="color: white;">{{offer[0]}}</h4>
+                    <h6 style="color: white;">{{offer[1]}}</h6>
+                    <div class="button-container" style="display: flex;">
+                        <a href="/buy-product/{{name}}?product-name={{offer[0]}}" class="btn btn-success">Buy</a>
+                        <form method="POST" class="mx-2">
+                            <input type="hidden" name="form_name" value="add_to_cart"> 
+                            <input type="hidden" name="product-name" value="{{offer[0]}} + {{offer[2]}}"> 
+                            <button onclick="cartSuccess()" type="submit" class="btn btn-info">Add to cart</button>
+                        </form>
+                    </div>
+                    <div class="position-absolute" style="bottom: -5%; right: -4%">
+                        <img src="https://www.pngall.com/wp-content/uploads/2017/11/Starburst-High-Quality-PNG.png" alt="discount-tag" width="60">
+                    </div>
+                    <div class="position-absolute bottom-0 end-0">
+                        <b style="color: white;">{{offer[3]}}%<br>off</b>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
     <div class="product-container mt-5" id="products">
         {% for category in prod_cat_dict %}
             <div class="category-container bg-light border rounded-2 my-3 p-3">
