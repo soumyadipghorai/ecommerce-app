@@ -7,29 +7,10 @@
 {% endblock %}
 
 {% block body %}
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="/admin-dashboard/{{admin}}">{{admin}}'s, dashboard</a>
-        <form class="d-flex" role="search" method = 'POST'>
-            <input type="hidden" name="form_name" value="logout-form">
-            <a href="/dashboard/{{admin}}" class="btn btn-outline-success mx-3">Summary</a>
-            <button class="btn btn-outline-danger" type="submit">Log out</button>
-        </form>
-        </div>
-    </nav>
-    <div class="dashboard-container mt-5">
-        <div class="category-card-container rounded-2 bg-light mb-3" style="height: fit-content;">
-            <div class="row justify-content-around">
-                <div class="col-sm-5 m-5">
-                    <img class="rounded-2" src="{{url_for('static', filename='/images/category-wise-sale.png')}}" height="400" alt="">
-                </div>
-                <div class="col-sm-5 m-5">
-                    <img class="rounded-2" src="{{url_for('static', filename='/images/category-wise-stock.png')}}" height="400" alt="">
-                </div>
-            </div>
-        </div>
-
-        <a href="/admin-dashboard/{{admin}}" class="btn btn-outline-success">Go to Home</a>
-        <a href="{{url_for('static', filename='/data/order_data.csv')}}" class="btn btn-danger">Export</a>
+    <div id="app" user-id={{admin}}>
+        <nav-bar></nav-bar>
+        <dashboard></dashboard>
     </div>
+    
+    <script type="text/javascript" src="{{url_for('static', filename = 'js/components/dashboard.js')}}"></script>
 {% endblock %} 

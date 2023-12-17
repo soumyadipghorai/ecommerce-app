@@ -62,3 +62,29 @@ order_id,username,category,product_name,price,quantity,order_date,total_price
 61,ghorai,fruit,mango ,75,2,2023-09-03,150
 62,ghorai,fruit,lichi ,100,2,2023-09-03,200
 63,ghorai,Non Veg,Fish ,100,1,2023-09-03,100
+64,ghorai,cake,pastry,25,1,2023-10-28,25
+65,ghorai,Non Veg,Fish ,75,1,2023-10-28,75
+66,ghorai,Non Veg,Fish ,75,1,2023-10-28,75
+67,ghorai,Non Veg,Fish ,75,1,2023-10-28,75
+68,ghorai,cake,belgium chocolate cake ,56,1,2023-10-28,56
+69,ghorai,fruit,lichi ,100,1,2023-10-28,100
+70,ghorai,Non Veg,Fish ,75,2,2023-10-28,150
+71,6,cake,pastry,25,1,2023-12-15,25
+72,6,Fruit,apple,56,1,2023-12-15,56
+73,6,Fruit,apple ,56,1,2023-12-15,56
+74,6,Fruit,orange,15,44,2023-12-15,660
+75,6,cake,belgium chocolate cake ,56,4,2023-12-15,224
+76,6,Fruit,apple ,56,2,2023-12-15,112
+77,6,non veg,Fish ,75,3,2023-12-15,225
+78,6,non veg,Fish,75,1,2023-12-16,75
+79,6,Fruit,apple,56,1,2023-12-16,56
+80,6,Fruit,apple,56,1,2023-12-16,56
+81,6,Fruit,apple,56,1,2023-12-16,56
+82,6,Fruit,apple,56,94,2023-12-16,5264
+83,6,Fruit,apple,56,0,2023-12-16,0
+84,6,Fruit,apple,56,1,2023-12-16,56
+85,6,Fruit,apple ,50,1,2023-12-16,50
+86,6,non veg,Fish ,75,1,2023-12-16,75
+87,6,Fruit,mango ,56,2,2023-12-16,112
+88,6,cake,chocolate cake ,100,3,2023-12-16,300
+89,6,cake,belgium chocolate cake,56,95,2023-12-17,5320

@@ -18,56 +18,11 @@
 {% endblock %}
 
 {% block body %}
-<nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="/products/{{username}}">Ecom App</a>
-    <form class="d-flex" role="search" method = 'POST'>
-        <input type="hidden" name="form_name" value="logout-form">
-        <a href="/products/{{username}}" class="btn btn-outline-success mx-3">Home</a>
-        <button class="btn btn-outline-danger" type="submit">Log out</button>
-    </form>
-    </div>
-</nav>
-<div class="dashboard-container mt-5">
-    <h3>List of products</h3>
 
-    {% for data in cart_data %}
-        <div class="cart-item-card border bg-light rounded-2 my-3 p-4 row mx-0">
-            <div class="col-sm-6">
-                <h4>{{data['product_name']}}</h4>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <p><b>Quantity: </b>{{data['quantity']}}</p>
-                    </div>
-                    <div class="col-sm-3">
-                        <p><b>Price: </b>{{data['price']}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <form method = 'POST'>
-                    <input type="hidden" name="form_name" value="update-quantity">
-                    <input type="hidden" name="primary_key" value="{{data['cart_id']}}">
-                    <div class="input-section mb-3 mt-2">
-                        <label for="quantity">Update Quantity : </label>
-                        <input type="number" max="{{data['max_quantity']}}" min="0" name="quantity" id="quantity" required>
-                    </div>
-                    {% if data['max_quantity'] > 0 %}
-                        <button onclick="updateQuantity()" type="submit" class="btn btn-outline-success">Save</button>
-                    {% else %}
-                        <button type="submit" class="btn btn-outline-secondary" disabled>Out of Stock</button>
-                    {% endif %}
-                </form>
-            </div>
-        </div>
-    {% endfor %}
-
-    <p><b>Total Price : </b> {{total_price}}</p>
-
-    <form method="POST" class="buy-all-form mb-5">
-        <input type="hidden" name="form_name" value="buy-all-form">
-        <button type="submit" class="btn btn-success">Buy All</button>
-    </form>
-    
+<div id="app" user-id="{{username}}">
+    <nav-bar></nav-bar>
+    <cart-section></cart-section>
 </div>
+
+<script type="text/javascript" src="{{url_for('static', filename = 'js/components/cart.js')}}"></script>
 {% endblock %} 

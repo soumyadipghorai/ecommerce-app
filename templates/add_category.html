@@ -7,38 +7,10 @@
 {% endblock %}
 
 {% block body %}
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/admin-dashboard/{{admin}}"><h4>{{admin}}'s, dashboard</h4></a>
-        <form class="d-flex" role="search" method = 'POST'>
-            <input type="hidden" name="form_name" value="logout-form">
-            <a href="/dashboard/{{admin}}" class="btn btn-outline-success mx-3">Summary</a>
-            <button class="btn btn-outline-danger" type="submit">Log out</button>
-        </form>
-        </div>
-    </nav>
-    <div class="dashboard-container mt-5">
-        <div class="category-form-container shadow border row">
-            <div class="col-sm-7 p-5 text-section">
-                <div class="text-section mt-5 mb-4">
-                    <h2 class="m-2 lh-1">Create New category</h2>
-                    <p class="m-2 section-description">You can create New category here by entering the new category and pressing the create button. Make Sure that the category is not already present.</p>
-                </div>
-                <form action="/add-category/{{admin}}" method = 'POST' class="m-2">
-                    <input type="hidden" name="form_name" value="category-form">
-                    <label for="category"><p class="m-0">Category Name :</p></label>
-                    <input type="text" name="categoryName" id="categoryName" placeholder="Enter Category Name..." class="mb-3 w-75 p-2 rounded-2 border-1" required> 
-                    <div class="button-container">
-                        <input type="submit" value="Create" class="btn btn-success px-3">
-                    </div>
-                    <div class="message mt-2" style="color: red;">
-                        {{message}}
-                    </div>
-                </form>
-            </div>
-            <div class="col-sm-5 img-section">
-
-            </div>
-        </div>
+    <div id="app" user-id="{{admin}}">
+        <nav-bar></nav-bar>
+        <add-product></add-product>
     </div>
+
+    <script type="text/javascript" src="{{url_for('static', filename = 'js/components/add_category.js')}}"></script>
 {% endblock %} 

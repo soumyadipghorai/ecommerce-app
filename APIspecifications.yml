@@ -436,3 +436,127 @@ paths:
           description: username already exist.
         '500':
           description: Internal Server Error.
+
+  /api/cart/{user_id}:
+    description: >-
+      End point to read, update and delete a user resource with username.
+    get:
+      description: Operation to get a product details
+      parameters:
+        - in: path
+          name: username
+          required: true
+          schema:
+            type: integer
+            example: 2
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                title: user object
+                type: object
+                properties:
+                  name:
+                    type: string
+                    example: product_name
+                  unit:
+                    type: string
+                    example: rs_per_kg
+                  price:
+                    type: integer
+                    example: 100
+                  quantity: 
+                    type: integer 
+                    example: 10
+        '400':
+          description: Bad request.
+        '404':
+          description: Resource not found.
+        '500':
+          description: Internal Server Error.
+
+  /api/admin/{user_id}:
+    description: >-
+      End point to get all the admin dashboard data 
+    get:
+      description: Operation to get a admin dashboard data
+      parameters:
+        - in: path
+          name: username
+          required: true
+          schema:
+            type: integer
+            example: 2
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                title: user object
+                type: object
+                
+        '400':
+          description: Bad request.
+        '404':
+          description: Resource not found.
+        '500':
+          description: Internal Server Error.
+
+  /api/product-page/{user_id}:
+    description: >-
+      End point to get all the product page data 
+    get:
+      description: Operation to get a product page data
+      parameters:
+        - in: path
+          name: username
+          required: true
+          schema:
+            type: integer
+            example: 2
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                title: user object
+                type: object
+                
+        '400':
+          description: Bad request.
+        '404':
+          description: Resource not found.
+        '500':
+          description: Internal Server Error.
+
+  /api/offers/{user_id}:
+    description: >-
+      End point to get all the product page data 
+    get:
+      description: Operation to get a product page data
+      parameters:
+        - in: path
+          name: username
+          required: true
+          schema:
+            type: integer
+            example: 2
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                title: user object
+                type: object
+                
+        '400':
+          description: Bad request.
+        '404':
+          description: Resource not found.
+        '500':
+          description: Internal Server Error.

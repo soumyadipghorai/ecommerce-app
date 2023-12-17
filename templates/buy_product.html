@@ -1,5 +1,6 @@
 {% extends 'base_template.html' %}
 {% block css %} 
+    
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='buy_product.css') }}">
     <script>
         function checkTotal(){
@@ -20,44 +21,11 @@
 {% endblock %}
 
 {% block body %}
-<nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="/products/{{username}}">Ecom App</a>
-    <form class="d-flex" role="search" method = 'POST'>
-        <input type="hidden" name="form_name" value="logout-form">
-        <a href="/cart/{{username}}" class="btn btn-outline-success mx-3">Cart</a>
-        <button class="btn btn-outline-danger" type="submit">Log out</button>
-    </form>
-    </div>
-</nav>
-<div class="dashboard-container mt-5 shadow border row mx-0" style="border-radius: 10px;">
-    <div class="contegory-form-container w-50 p-5 col-sm-6">
-        <h2 class="m-2">Buy {{product_name}}</h2>
-        <p class="m-2 mb-5">Shop Smarter, Eat Fresher – Your Cart, Your Culinary Adventure!</p>
 
-        <form method = 'POST' class="m-2">
-            <input type="hidden" name="form_name" value="buy-product">
-            <div class="my-3">
-                <!-- <p>Price per unit : <b>{{product_price}}/-</b></p> -->
-            </div>
-            <div class="my-3 mb-0">
-                <label class="mb-2" for="quantity">Enter Quantity:</label>
-                <input class="form-control mb-4" type="number" name= 'quantity' id = 'quantity' min="0" max="{{max_limit}}" placeholder="{{max_limit}} units available" required>
-            </div>
-            <div class="my-3 mb-2">
-                <p>Total : <span class="totalPrice" id="totalPrice">0</span></p>
-            </div>
-            <div class="my-3">
-                <button onclick="checkTotal()" type="button" class="btn btn-outline-success py-2 px-3">Check total</button>
-                <input type="submit" value="Buy" class="btn-success btn py-2 px-5">
-            </div>
-            <div class="message mt-2" style="color: red;">
-                {{message}}
-            </div>
-        </form>
-    </div>
-    <div class="col-sm-6 image-section">
-
-    </div>
+<div id="app" user-id={{username}} product-name={{product_name}} product-price="{{product_price}}" max-limit="{{max_limit}}">
+    <nav-bar></nav-bar>
+    <buy-product></buy-product>
 </div>
+
+<script type="text/javascript" src="{{url_for('static', filename = 'js/components/buy_product.js')}}"></script>
 {% endblock %} 

@@ -11,89 +11,14 @@
     <title>Product</title>
 {% endblock %}
 
-{% block body %}
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="/products/{{name}}">Ecom App</a>
-        <form class="d-flex" role="search" method = 'POST'>
-            <input type="hidden" name="form_name" value="logout-form">
-            <a href="/cart/{{name}}" class="btn btn-outline-success mx-3">Cart</a>
-            <button class="btn btn-outline-danger" type="submit">Log out</button>
-        </form>
-        </div>
-    </nav>
-    <div class="hero-section bg-light row my-5 mx-0 shadow">
-        <div class="col-sm-6 p-5">
-            <div class="text-section mt-5 mb-4">
-                <h2>Available products</h2>
-                <p class="description my-2">Welcome, {{name}}! Today We have the following products available for you, you can directly buy products from this page or maybe add to cart and buy every together in future.</p>
-            </div>
-            <a href="#products"><button class="btn btn-success">View Products</button></a>
-        </div>
-        <div class="col-sm-6 image-section"></div>
+{% block body %}    
+    <div id="app" user-id={{name}}>
+        <nav-bar></nav-bar>
+        <offers></offers>
+        <main-product-section></main-product-section>
     </div>
-    <div class="offer-container mt-5 bg-light p-5">
-        <div class="row">
-            <div class="col">
-                <h2>Offer Section</h2>
-                <button class="btn btn-danger" type="button" disabled>
-                    <span class="spinner-grow spinner-grow-sm text-warning" aria-hidden="true"></span>
-                    <span class="visually-hidden" role="status">Loading...</span>
-                </button>
-            </div>
-            {% for offer in offer_details %}
-                <div class="col-sm-3 rounded-2 border-1 bg-black bg-gradient bg-opacity-75 m-3 p-3 position-relative">
-                    <h4 style="color: white;">{{offer[0]}}</h4>
-                    <h6 style="color: white;">{{offer[1]}}</h6>
-                    <div class="button-container" style="display: flex;">
-                        <a href="/buy-product/{{name}}?product-name={{offer[0]}}" class="btn btn-success">Buy</a>
-                        <form method="POST" class="mx-2">
-                            <input type="hidden" name="form_name" value="add_to_cart"> 
-                            <input type="hidden" name="product-name" value="{{offer[0]}} + {{offer[2]}}"> 
-                            <button onclick="cartSuccess()" type="submit" class="btn btn-info">Add to cart</button>
-                        </form>
-                    </div>
-                    <div class="position-absolute" style="bottom: -5%; right: -4%">
-                        <img src="https://www.pngall.com/wp-content/uploads/2017/11/Starburst-High-Quality-PNG.png" alt="discount-tag" width="60">
-                    </div>
-                    <div class="position-absolute bottom-0 end-0">
-                        <b style="color: white;">{{offer[3]}}%<br>off</b>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-    <div class="product-container mt-5" id="products">
-        {% for category in prod_cat_dict %}
-            <div class="category-container bg-light border rounded-2 my-3 p-3">
-                <h3 class="m-2 category-name">{{category}}</h3>
-                <div class="product-card-container" style="display: flex;">
-                    {% for product in prod_cat_dict[category] %}
-                        <div class="product-card bg-white p-4 m-2 border rounded-2">
-                            <div class="product-info mb-3">
-                                    <h5 class="product-name">{{product['name']}}</h5>
-                                    <p class="product-price">
-                                        <b>₹{{product['price']}}</b>
-                                    </p>
-                            </div>
-
-                            {% if product['quantity'] > 0 %}
-                            <div class="button-container" style="display: flex;">
-                                <a href="/buy-product/{{name}}?product-name={{product['name']}}" class="btn btn-success">Buy</a>
-                                <form method="POST" class="mx-2">
-                                    <input type="hidden" name="form_name" value="add_to_cart"> 
-                                    <input type="hidden" name="product-name" value="{{product['name']}} + {{category}}"> 
-                                    <button onclick="cartSuccess()" type="submit" class="btn btn-outline-secondary">Add to cart</button>
-                                </form>
-                            </div>
-                            {% else %}
-                                <button type="button" class="btn btn-outline-secondary" disabled>Out of stock</button>
-                            {% endif %}
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-
-        {% endfor %}
-    </div>
+    
+    <script type="text/javascript" src="{{url_for('static', filename = 'js/components/product_page.js')}}"></script>
 {% endblock %} 
+
+

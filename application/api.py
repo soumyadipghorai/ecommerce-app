@@ -1,8 +1,9 @@
 from flask_restful import Resource 
 from application.database import db 
 from flask_restful import fields, marshal_with, reqparse
-from application.models import User, Product 
+from application.models import User, Product, Cart, Category, Order, Offers
 from application.validations import NotFoundError, BusinessValidationError, ProductNotFoundError
+from application.discount import Discount
 
 # it helps in formatting if you don't want any fields 
 # then directly delete it from here and it would be reflected in the output
@@ -199,12 +200,12 @@ class ProductAPI(Resource) :
         db.session.delete(product)
         db.session.commit()
         return {
-                'product_id' : product_db.product_id,
-                'name' : product_db.name, 
-                'category' : product_db.category, 
-                'price' : product_db.price, 
-                'quantity' : product_db.quantity, 
-                'unit' : product_db.unit
+                'product_id' : product.product_id,
+                'name' : product.name, 
+                'category' : product.category, 
+                'price' : product.price, 
+                'quantity' : product.quantity, 
+                'unit' : product.unit
                 }
 
 
@@ -248,3 +249,99 @@ class ProductAPI(Resource) :
                 'quantity' : new_product.quantity, 
                 'unit' : new_product.unit
             }
+
+class CartAPI(Resource) : 
+    def get(self, username) : 
+        all_products = Cart.query.filter_by(username = username).all()
+        print(all_products)
+        list_of_items = {
+            'total_price' : 0, 
+            "cart" : {
+
+            }
+        }
+        counter = 0
+        for record in all_products : 
+            product_details = Product.query.filter_by(name = record.product_name.strip()).first()
+
+            list_of_items["cart"][counter] = {
+                'product_name' : record.product_name, 
+                'quantity' : min(int(record.quantity), int(product_details.quantity)),
+                'price' : record.price,
+                'cart_id' : int(record.cart_id),
+                'max_quantity' : int(product_details.quantity)
+            }
+            list_of_items['total_price'] += min(int(record.quantity), int(product_details.quantity))*record.price
+            counter += 1 
+
+
+        return list_of_items
+    
+class AdminDashboarAPI(Resource) :
+    def get(self, username) : 
+        all_category = Category.query.all()
+        
+        # landing page additional info 
+        total_sales = sum([int(order.total_price) for order in Order.query.all()])
+        total_inventory = sum([int(product.price) * int(product.quantity) for product in Product.query.all()])
+        total_items = sum([int(product.quantity) for product in Product.query.all()])
+    
+        category_product_mapping = {}
+        for category in all_category : 
+            product_list = Product.query.filter_by(category = category.name).all()
+            category_product_mapping[category.name] = []
+            for product in product_list : 
+                category_product_mapping[category.name].append({
+                    'product-name' : product.name, 
+                    'product-quantity' : product.quantity
+                })
+            
+
+        return {
+            "catgoryList" : category_product_mapping, 
+            'sales' : total_sales, 
+            'inventory' : total_inventory, 
+            'items' : total_items
+        }
+    
+
+class ProductPageAPI(Resource) :
+    def get(self, username) :
+        obj = Discount()
+        obj.ingest_in_database()
+        
+        # filter products 
+        category_product_maping = {}
+        all_category = Category.query.all()
+        for category in all_category : 
+            category_product_maping[category.name.strip()] = []
+            all_product = Product.query.filter_by(category = category.name).all()
+            for product in all_product : 
+                category_product_maping[category.name.strip()].append({
+                    'name' : product.name.strip(), 
+                    'price' : product.price, 
+                    'quantity' : product.quantity})
+
+        return category_product_maping
+
+class OffersAPI(Resource) :
+    def get(self, username) :
+        obj = Discount()
+        obj.ingest_in_database()
+
+        all_offer = Offers.query.all()
+        offer_product, counter = {}, 0
+        
+        for offer in all_offer :
+            product_name = offer.product_name 
+            product_details = Product.query.filter_by(name = product_name).first()
+
+            offer_product[counter] = {
+                "product_name" : product_name, 
+                "price" : product_details.price, 
+                "category" : product_details.category, 
+                "discount" : offer.discount
+            }
+            counter += 1 
+
+        return offer_product
