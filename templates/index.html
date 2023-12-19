@@ -19,17 +19,20 @@
             margin: 0;
             padding: 0;
         }
-        .herosection{
-            background: url('https://t3.ftcdn.net/jpg/03/35/74/56/360_F_335745675_MaxYxSsadrviZdThITuHB2oCohYOiwEu.jpg');
+        .img-section{
+            background: url('/static/images/icon/Group\ 1.png');
             background-repeat: no-repeat;
             background-position: center;
-            background-size: cover;
-            height: 100vh;
+            background-size: contain;
+            height: 60vh;
+            border-radius: 10px;
+        }
+        .text-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .text-section{
-            margin: 15% 5%;
-        }
     </style>
 </head>
 <body>
@@ -40,3 +43,5 @@
     <script type="text/javascript" src="{{url_for('static', filename = 'js/components/index.js')}}"></script>
 </body>
 </html>
+
+<div class="bg-light w-40 h40"></div>

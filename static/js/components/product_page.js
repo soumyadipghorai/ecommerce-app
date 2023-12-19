@@ -2,13 +2,34 @@ Vue.component('nav-bar', {
     template : `
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" :href="formattedProductPage">Ecom App</a>
-            <div>
-                <a :href="formattedUrl" class="btn btn-outline-success mx-3">Cart</a>
-                <a href="/logout"><button class="btn btn-outline-danger" type="submit">Log out</button></a>
+            <div class="w-25 h-100">
+                <a class="navbar-brand" :href="formattedProductPage">Ecom App</a>
+            </div>
+            <div class="w-75 d-flex justify-content-between align-items-center"> 
+                <form class="row ms-auto mt-3" method="POST"> 
+                    <input type="hidden" name="form_name" value="search_product"> 
+                    <div class="col-auto">
+                        <label for="inputValue" class="visually-hidden">Password</label>
+                        <input type="text" class="form-control" id="inputValue" placeholder="Search items..." name="querry">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">
+                            Search
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="my-0">
+                    <a :href="formattedUrl" class="btn btn-outline-success mx-3">Cart</a>
+                    <a href="/logout"><button class="btn btn-outline-danger" type="submit">Log out</button></a>
+                </div>
             </div>
         </div>
     </nav>
+
     `,
     data() {
         return {
@@ -29,6 +50,13 @@ Vue.component('nav-bar', {
         }, 
         formattedProductPage(){
             return this.dahsboardUrl;
+        },
+        submitForm(event) {
+            event.preventDefault(); 
+            const queryInput = document.getElementById('inputValue');
+            const query = encodeURIComponent(queryInput.value.trim()); 
+            console.log(query);
+            window.location.href = `/search_results?q=${query}`;
         }
     }
 });
@@ -36,7 +64,7 @@ Vue.component('nav-bar', {
 Vue.component("offers", {
     template : `
     <div>
-    <div class="hero-section bg-light row my-5 mx-0 shadow">
+    <div class="hero-section bg-light row my-5 mx-0 shadow-sm">
         <div class="col-sm-6 p-5">
             <div class="text-section mt-5 mb-4">
                 <h2>Available products</h2>
@@ -46,7 +74,7 @@ Vue.component("offers", {
         </div>
         <div class="col-sm-6 image-section"></div>
     </div>
-    <div class="offer-container mt-5 bg-light p-5">
+    <div class="offer-container mt-5 bg-light p-5 shadow rounded-2">
         <div class="row">
             <div class="col">
                 <h2>Offer Section</h2>
@@ -55,7 +83,7 @@ Vue.component("offers", {
                     <span class="visually-hidden" role="status">Loading...</span>
                 </button>
             </div>
-                <div class="col-sm-3 rounded-2 border-1 bg-black bg-gradient bg-opacity-75 m-3 p-3 position-relative" v-for="offer in offers">
+                <div class="col-sm-3 product-card rounded-2 border-1 bg-black bg-gradient bg-opacity-75 m-3 p-3 position-relative" v-for="offer in offers">
                     <h4 style="color: white;">{{offer['product_name']}}</h4>
                     <h6 style="color: white;">{{offer['price']}}</h6>
                     <div class="button-container" style="display: flex;">
@@ -66,7 +94,7 @@ Vue.component("offers", {
                             <button onclick="cartSuccess()" type="submit" class="btn btn-info">Add to cart</button>
                         </form>
                     </div>
-                    <div class="position-absolute" style="bottom: -5%; right: -4%">
+                    <div class="position-absolute discount" style="bottom: -5%; right: -4%">
                         <img src="https://www.pngall.com/wp-content/uploads/2017/11/Starburst-High-Quality-PNG.png" alt="discount-tag" width="60">
                     </div>
                     <div class="position-absolute bottom-0 end-0">

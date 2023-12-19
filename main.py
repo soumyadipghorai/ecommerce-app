@@ -42,13 +42,14 @@ app, api = create_app()
 
 # import all the controllers so they are loaded 
 from application.controllers import *
-from application.api import UserAPI, ProductAPI, CartAPI, AdminDashboarAPI, ProductPageAPI, OffersAPI
+from application.api import UserAPI, ProductAPI, CartAPI, AdminDashboarAPI, ProductPageAPI, OffersAPI, SearchResult
 api.add_resource(UserAPI, "/api/user", "/api/user/<string:username>")
 api.add_resource(ProductAPI, "/api/product", "/api/category/<string:product>")
 api.add_resource(CartAPI, "/api/cart", "/api/cart/<string:username>")
 api.add_resource(AdminDashboarAPI, "/api/admin", "/api/admin/<string:username>")
 api.add_resource(ProductPageAPI, "/api/product-page", "/api/product-page/<string:username>")
 api.add_resource(OffersAPI, "/api/offers", "/api/offers/<string:username>")
+api.add_resource(SearchResult, "/api/search", "/api/search/<string:username>")
 
 @app.errorhandler(404)
 def page_not_found(e) :

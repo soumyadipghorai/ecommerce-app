@@ -1,13 +1,14 @@
-from flask import Flask, request, render_template, redirect, url_for, session
-from flask import current_app as app 
-from application.models import User, Admin, Category, Product, Order, Cart, Offers
-from application.database import db
-from application.discount import Discount
+import logging
+import pandas as pd 
 from datetime import date 
 import matplotlib.pyplot as plt
-import pandas as pd 
-import logging
+from flask import current_app as app 
+from application.database import db
+from application.discount import Discount
+from application.models import User, Admin, Category, Product, Order, Cart, Offers, ProductSearch
+
 from flask_security import roles_required, login_required, current_user
+from flask import Flask, request, render_template, redirect, url_for, session
 
 
 all_users = [user.username for user in User.query.all()]
@@ -278,7 +279,7 @@ def product_page(username) :
         return render_template('products.html', name = username, prod_cat_dict = category_product_maping, offer_details = offer_product)
 
     elif request.method == 'POST' : 
-        form_name = request.form['form_name']
+        form_name = request.form['form_name'] 
         if form_name == 'add_to_cart' : 
             product_name, product_category = request.form['product-name'].split('+')
             product_details = Product.query.filter_by(name = product_name.strip(), category = product_category.strip()).first()
@@ -296,7 +297,9 @@ def product_page(username) :
             db.session.commit()
 
             return redirect(url_for('product_page', username = username))
-            
+        elif form_name == 'search_product' : 
+            query = request.form['querry']  
+            return redirect(url_for('search', q = query, username = username))
     else : 
         return render_template('error.html')
 
@@ -444,6 +447,12 @@ def buy_product(username) :
             except : 
                 db.session.rollback()
                 return render_template('error.html')
+            
+        elif form_name == 'search_product' : 
+            query = request.form['querry']  
+            return redirect(url_for('search', q = query, username = username))
+        else : 
+            return render_template('error.html')
 
 @app.route('/cart/<username>', methods = ['GET', 'POST'])
 @login_required
@@ -524,3 +533,33 @@ def cart_page(username) :
             db.session.commit()
 
             return redirect(url_for('product_page', username = username))
+        
+@app.route("/search_results/<username>", methods = ['GET', 'POST'])
+def search(username) : 
+    if request.method == 'GET' : 
+        q = request.args.get('q') 
+        return render_template('search_result.html', name = username, query = q)
+    elif request.method == 'POST' : 
+        form_name = request.form['form_name'] 
+        if form_name == 'add_to_cart' : 
+            product_name, product_category = request.form['product-name'].split('+')
+            product_details = Product.query.filter_by(name = product_name.strip(), category = product_category.strip()).first()
+
+            new_cart_item = Cart(
+                username = username, 
+                product_name = product_name, 
+                quantity = 1, 
+                price = int(product_details.price), 
+                category = product_category
+            )
+
+            db.session.add(new_cart_item)
+
+            db.session.commit()
+
+            return redirect(url_for('product_page', username = username))
+        elif form_name == 'search_product' : 
+            query = request.form['querry']  
+            return redirect(url_for('search', q = query, username = username))
+    else : 
+        return render_template('error.html')

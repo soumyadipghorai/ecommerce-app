@@ -1,0 +1,21 @@
+{% extends 'base_template.html' %}
+{% block css %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='product.css') }}">
+    <script>
+        function cartSuccess(){
+            alert('Successfully added to Cart');
+        }
+    </script>
+{% endblock %}
+{% block title %}
+    <title>Product</title>
+{% endblock %}
+
+{% block body %}    
+    <div id="app" user-id={{name}} query-string = {{query}}>
+        <nav-bar></nav-bar> 
+        <main-product-section></main-product-section>
+    </div>
+    
+    <script type="text/javascript" src="{{url_for('static', filename = 'js/components/search_result.js')}}"></script>
+{% endblock %} 

@@ -560,3 +560,25 @@ paths:
           description: Resource not found.
         '500':
           description: Internal Server Error.
+
+  /api/search:
+    get:
+      summary: Search API
+      description: Endpoint for searching based on a query parameter.
+      parameters:
+        - name: q
+          in: query
+          description: The search query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example:
+                query: example_query
+                results:
+                  - result1
+                  - result2

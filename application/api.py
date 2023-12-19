@@ -1,7 +1,8 @@
 from flask_restful import Resource 
+from flask import request, jsonify
 from application.database import db 
 from flask_restful import fields, marshal_with, reqparse
-from application.models import User, Product, Cart, Category, Order, Offers
+from application.models import User, Product, Cart, Category, Order, Offers, ProductSearch
 from application.validations import NotFoundError, BusinessValidationError, ProductNotFoundError
 from application.discount import Discount
 
@@ -345,3 +346,28 @@ class OffersAPI(Resource) :
             counter += 1 
 
         return offer_product
+    
+class SearchResult(Resource) :
+    def get(self, username) :
+        query = request.args.get('q', '')    
+        query_results = ProductSearch.query.filter(ProductSearch.name.op("MATCH")(query + '*') | ProductSearch.category.op("MATCH")(query + '*')).all()
+        final_result = {}
+        for result in query_results : 
+            if result.category.strip() != "category" :
+                if result.category not in final_result :
+                    final_result[result.category] = []
+                final_result[result.category].append({
+                    "name" : result.name, 
+                    "price" : None, 
+                    "quantity" : None
+                })
+
+        for category in final_result :
+            for product in final_result[category] : 
+                product_name = product["name"]
+                product_details = Product.query.filter_by(name = product_name.strip()).first()
+                product["price"] = product_details.price
+                product["quantity"] = product_details.quantity
+    
+        return jsonify(final_result)
+
