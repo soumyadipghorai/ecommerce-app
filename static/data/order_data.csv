@@ -88,3 +88,4 @@ order_id,username,category,product_name,price,quantity,order_date,total_price
 87,6,Fruit,mango ,56,2,2023-12-16,112
 88,6,cake,chocolate cake ,100,3,2023-12-16,300
 89,6,cake,belgium chocolate cake,56,95,2023-12-17,5320
+90,6,Non veg,Fish,75,1,2023-12-20,75

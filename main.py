@@ -2,8 +2,9 @@ import os
 import logging 
 from flask import Flask 
 from flask_restful import Resource, Api
-from application import config
-from application.config import LocalDevelopmentConfig 
+from application.utils import config
+from application.controller import workers
+from application.utils.config import LocalDevelopmentConfig 
 from application.data.database import db 
 from flask_security import Security, SQLAlchemySessionUserDatastore, SQLAlchemyUserDatastore 
 from application.data.models import User, Role 
@@ -17,6 +18,7 @@ logging.basicConfig(
 
 app = None 
 api = None 
+celery = None
 def create_app() : 
     app = Flask(__name__, template_folder = 'templates')
     app.secret_key = 'ItShouldBeAnythingButSecret'
@@ -34,12 +36,14 @@ def create_app() :
     security = Security(app, user_datastore)
     app.logger.info("App setup complete")
     CORS(app)
+
+
     return app, api 
     # return app
 
 app, api = create_app()
-# app = create_app()
-
+ 
+ 
 # import all the controllers so they are loaded 
 from application.controller.controllers import *
 from application.controller.api import UserAPI, ProductAPI, CartAPI, AdminDashboarAPI, ProductPageAPI, OffersAPI, SearchResult
