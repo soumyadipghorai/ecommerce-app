@@ -4,9 +4,9 @@ from flask import Flask
 from flask_restful import Resource, Api
 from application import config
 from application.config import LocalDevelopmentConfig 
-from application.database import db 
+from application.data.database import db 
 from flask_security import Security, SQLAlchemySessionUserDatastore, SQLAlchemyUserDatastore 
-from application.models import User, Role 
+from application.data.models import User, Role 
 from flask_cors import CORS
 
 logging.basicConfig(
@@ -41,8 +41,8 @@ app, api = create_app()
 # app = create_app()
 
 # import all the controllers so they are loaded 
-from application.controllers import *
-from application.api import UserAPI, ProductAPI, CartAPI, AdminDashboarAPI, ProductPageAPI, OffersAPI, SearchResult
+from application.controller.controllers import *
+from application.controller.api import UserAPI, ProductAPI, CartAPI, AdminDashboarAPI, ProductPageAPI, OffersAPI, SearchResult
 api.add_resource(UserAPI, "/api/user", "/api/user/<string:username>")
 api.add_resource(ProductAPI, "/api/product", "/api/category/<string:product>")
 api.add_resource(CartAPI, "/api/cart", "/api/cart/<string:username>")

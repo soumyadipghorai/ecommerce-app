@@ -1,6 +1,6 @@
 import numpy as np
-from .database import db
-from application.models import User, Admin, Category, Product, Order, Cart, Offers
+from application.data.database import db
+from application.data.models import User, Admin, Category, Product, Order, Cart, Offers
 import logging 
 
 logger1 = logging.getLogger('file1')

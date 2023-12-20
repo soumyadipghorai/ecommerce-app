@@ -3,9 +3,9 @@ import pandas as pd
 from datetime import date 
 import matplotlib.pyplot as plt
 from flask import current_app as app 
-from application.database import db
-from application.discount import Discount
-from application.models import User, Admin, Category, Product, Order, Cart, Offers, ProductSearch
+from application.data.database import db
+from application.utils.discount import Discount
+from application.data.models import User, Admin, Category, Product, Order, Cart, Offers, ProductSearch
 
 from flask_security import roles_required, login_required, current_user
 from flask import Flask, request, render_template, redirect, url_for, session
@@ -441,18 +441,14 @@ def buy_product(username) :
                 print(old_product.quantity)
 
                 db.session.commit()
+                print("commit")
 
                 return redirect(url_for('product_page', username = username))
-            
+        
             except : 
                 db.session.rollback()
                 return render_template('error.html')
             
-        elif form_name == 'search_product' : 
-            query = request.form['querry']  
-            return redirect(url_for('search', q = query, username = username))
-        else : 
-            return render_template('error.html')
 
 @app.route('/cart/<username>', methods = ['GET', 'POST'])
 @login_required

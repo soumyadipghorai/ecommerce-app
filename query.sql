@@ -7,21 +7,21 @@ product_search USING  fts5(
 
 -- create triggers to add product 
 CREATE TRIGGER product_ai AFTER INSERT ON product BEGIN	
-INSERT INTO product_search(row_id, name, category) VALUES (
+INSERT INTO product_search(rowid, name, category) VALUES (
 	new.product_id, new.name, new.category);
 END;
 
 -- create trigger to delete product 
 CREATE TRIGGER product_ad AFTER DELETE ON product BEGIN	
-INSERT INTO product_search(product_search, row_id, name, category) 
+INSERT INTO product_search(product_search, rowid, name, category) 
 VALUES ('delete', old.product_id, old.name, old.category);
 END;
 
 -- create trigger to update product
 CREATE TRIGGER product_au AFTER UPDATE ON product BEGIN	
-INSERT INTO product_search(product_search, row_id, name, category) 
+INSERT INTO product_search(product_search, rowid, name, category) 
 	VALUES ('delete', old.product_id, old.name, old.category);
-INSERT INTO product_search(row_id, name, category) 
+INSERT INTO product_search(rowid, name, category) 
 	VALUES (new.product_id, new.name, new.category);
 END;
 

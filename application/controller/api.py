@@ -1,10 +1,10 @@
 from flask_restful import Resource 
 from flask import request, jsonify
-from application.database import db 
+from application.data.database import db 
 from flask_restful import fields, marshal_with, reqparse
-from application.models import User, Product, Cart, Category, Order, Offers, ProductSearch
-from application.validations import NotFoundError, BusinessValidationError, ProductNotFoundError
-from application.discount import Discount
+from application.data.models import User, Product, Cart, Category, Order, Offers, ProductSearch
+from application.utils.validations import NotFoundError, BusinessValidationError, ProductNotFoundError
+from application.utils.discount import Discount
 
 # it helps in formatting if you don't want any fields 
 # then directly delete it from here and it would be reflected in the output
