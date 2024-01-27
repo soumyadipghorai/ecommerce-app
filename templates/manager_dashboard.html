@@ -1,0 +1,18 @@
+{% extends 'base_template.html' %}
+{% block css %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user_login.css') }}">
+{% endblock %}
+{% block title %}
+    <title>Admin Dashboard</title>
+{% endblock %}
+
+{% block body %}
+    <div id="app" user-id={{manager}}> 
+        <nav-bar></nav-bar>
+        <delete-request></delete-request>
+        <add-request></add-request>
+        <edit-request></edit-request>
+    </div>
+    
+    <script type="text/javascript" src="{{url_for('static', filename = 'js/components/manager_dashboard.js')}}"></script>
+{% endblock %} 

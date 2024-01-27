@@ -2,9 +2,10 @@ from flask_restful import Resource
 from flask import request, jsonify
 from application.data.database import db 
 from flask_restful import fields, marshal_with, reqparse
-from application.data.models import User, Product, Cart, Category, Order, Offers, ProductSearch
+from application.data.models import User, Product, Cart, Category, Order, Offers, ProductSearch, AdminApproval, ManagerApproval, AddCategoryApproval, EditCategoryApproval, ProductSearchNew
 from application.utils.validations import NotFoundError, BusinessValidationError, ProductNotFoundError
 from application.utils.discount import Discount
+from application.data import data_access
 
 # it helps in formatting if you don't want any fields 
 # then directly delete it from here and it would be reflected in the output
@@ -254,7 +255,7 @@ class ProductAPI(Resource) :
 class CartAPI(Resource) : 
     def get(self, username) : 
         all_products = Cart.query.filter_by(username = username).all()
-        print(all_products)
+        print(all_products, username)
         list_of_items = {
             'total_price' : 0, 
             "cart" : {
@@ -264,7 +265,7 @@ class CartAPI(Resource) :
         counter = 0
         for record in all_products : 
             product_details = Product.query.filter_by(name = record.product_name.strip()).first()
-
+            print(record.product_name)
             list_of_items["cart"][counter] = {
                 'product_name' : record.product_name, 
                 'quantity' : min(int(record.quantity), int(product_details.quantity)),
@@ -277,6 +278,13 @@ class CartAPI(Resource) :
 
 
         return list_of_items
+    
+    def put(self, username) : 
+        pass 
+    def delete(self, username) : 
+        pass 
+    def post(self, username) :
+        pass
     
 class AdminDashboarAPI(Resource) :
     def get(self, username) : 
@@ -304,6 +312,12 @@ class AdminDashboarAPI(Resource) :
             'inventory' : total_inventory, 
             'items' : total_items
         }
+    def put(self, username) : 
+        pass 
+    def delete(self, username) : 
+        pass 
+    def post(self, username) :
+        pass
     
 
 class ProductPageAPI(Resource) :
@@ -324,6 +338,13 @@ class ProductPageAPI(Resource) :
                     'quantity' : product.quantity})
 
         return category_product_maping
+    
+    def put(self, username) : 
+        pass 
+    def delete(self, username) : 
+        pass 
+    def post(self, username) :
+        pass
 
 class OffersAPI(Resource) :
     def get(self, username) :
@@ -347,10 +368,17 @@ class OffersAPI(Resource) :
 
         return offer_product
     
+    def put(self, username) : 
+        pass 
+    def delete(self, username) : 
+        pass 
+    def post(self, username) :
+        pass
+    
 class SearchResult(Resource) :
     def get(self, username) :
         query = request.args.get('q', '')    
-        query_results = ProductSearch.query.filter(ProductSearch.name.op("MATCH")(query + '*') | ProductSearch.category.op("MATCH")(query + '*')).all()
+        query_results = ProductSearchNew.query.filter(ProductSearchNew.name.op("MATCH")(query + '*') | ProductSearchNew.category.op("MATCH")(query + '*') | ProductSearchNew.price.op("MATCH")(query + '*')).all()
         final_result = {}
         for result in query_results : 
             if result.category.strip() != "category" :
@@ -370,4 +398,84 @@ class SearchResult(Resource) :
                 product["quantity"] = product_details.quantity
     
         return jsonify(final_result)
+    
+    def put(self, username) : 
+        pass 
+    def delete(self, username) : 
+        pass 
+    def post(self, username) :
+        pass
 
+class pendingAdminApproval(Resource) :
+    def get(self, username) : 
+        all_pending = AdminApproval.query.filter_by(status = 1).all()
+        all_pending_manager_id = [pending.manager_id for pending in all_pending]
+
+        return {"manager_id" : all_pending_manager_id}
+    
+    def put(self, username) : 
+        pass 
+    def delete(self, username) : 
+        pass 
+    def post(self, username) :
+        pass
+    
+class pendingManagerApproval(Resource) :
+    def get(self, username) : 
+        all_pending = ManagerApproval.query.all()
+        # all_pending = data_access.get_all_manager_approval()
+        result = []
+        for pending in all_pending : 
+            result.append({
+                "name" : pending.category_name, 
+                "id" : pending.category_id
+            })
+
+        return result
+
+    def put(self, username) : 
+        pass 
+    def delete(self, username) : 
+        pass 
+    def post(self, username) :
+        pass
+
+class pendingAddCategoryApproval(Resource) :
+    def get(self, username) : 
+        all_pending = AddCategoryApproval.query.all()
+        # all_pending = data_access.get_all_add_category_approval()
+        result = []
+        for pending in all_pending : 
+            result.append({
+                "name" : pending.category_name,
+                "id" : pending.id
+            })
+
+        return result 
+    def put(self, username) : 
+        pass 
+    def delete(self, username) : 
+        pass 
+    def post(self, username) :
+        pass
+
+class pendingEditCategoryApproval(Resource) :
+    def get(self, username) : 
+        all_pending = EditCategoryApproval.query.all()
+        # all_pending = data_access.get_all_edit_category_approval()
+        result = []
+        for pending in all_pending : 
+            result.append({
+                "old_name" : pending.old_name, 
+                "new_name" : pending.new_name,
+                "category_id" : pending.category_id, 
+                "id" : pending.id
+            })
+
+        return result
+    def put(self, username) : 
+        pass 
+    def delete(self, username) : 
+        pass 
+    def post(self, username) :
+        pass

@@ -7,6 +7,12 @@ roles_users = db.Table(
     db.Column('role_id', db.Integer(), db.ForeignKey('role.id')),
 )
 
+class UserRole(db.Model):
+    __tablename__ = 'roles_users'
+    __table_args__ = {'extend_existing': True}
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), primary_key=True)
+    role_id = db.Column(db.Integer, db.ForeignKey('role.id'), primary_key=True)
+
 class User(db.Model, UserMixin) : 
     __tablename__ = 'user'
     id = db.Column(db.Integer, autoincrement = True, primary_key = True)
@@ -75,3 +81,34 @@ class ProductSearch(db.Model) :
     rowid = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String)
     category = db.Column(db.String)
+
+class AdminApproval(db.Model) : 
+    __tablename__ = "admin_approval"
+    id = db.Column(db.Integer, primary_key = True)
+    manager_id = db.Column(db.Integer)
+    status = db.Column(db.Boolean())
+
+class ManagerApproval(db.Model) : 
+    __tablename__ = "manager_approval"
+    id = db.Column(db.Integer, primary_key = True)
+    category_name = db.Column(db.String)
+    category_id = db.Column(db.Integer)
+
+class AddCategoryApproval(db.Model) : 
+    __tablename__ = "add_category_approval"
+    id = db.Column(db.Integer, primary_key = True)
+    category_name = db.Column(db.String)
+
+class EditCategoryApproval(db.Model) :
+    __tablename__ = "edit_category_approval"
+    id = db.Column(db.Integer, primary_key = True)
+    old_name = db.Column(db.String)
+    new_name = db.Column(db.String)
+    category_id = db.Column(db.Integer)
+
+class ProductSearchNew(db.Model) : 
+    __tablename__ = 'product_search_new'
+    rowid = db.Column(db.Integer, primary_key = True)
+    name = db.Column(db.String)
+    category = db.Column(db.String)
+    price = db.Column(db.Integer)

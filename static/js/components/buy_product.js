@@ -1,9 +1,12 @@
 Vue.component('nav-bar', {
     template : `
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg px-3 bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" :href="formattedProductPage">Ecom App</a>
-            <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <a :href="formattedUrl" class="btn btn-outline-success mx-3">Cart</a>
                 <a href="/logout"><button class="btn btn-outline-danger" type="submit">Log out</button></a>
             </div>
@@ -36,7 +39,7 @@ Vue.component('nav-bar', {
 Vue.component("buy-product", {
     template : `
     <div class="dashboard-container mt-5 shadow border row mx-0" style="border-radius: 10px;" >
-        <div class="contegory-form-container w-50 p-5 col-sm-6">
+        <div class="contegory-form-container p-4 col-md-6">
             <h2 class="m-2">Buy {{returnProductName}}</h2>
             <p class="m-2 mb-5">Shop Smarter, Eat Fresher – Your Cart, Your Culinary Adventure!</p>
 
@@ -60,7 +63,7 @@ Vue.component("buy-product", {
             </form>
             <div :product-name="productNameAPI"></div>
         </div>
-        <div class="col-sm-6 image-section">
+        <div class="col-md-6 image-section">
     
         </div>
     </div>

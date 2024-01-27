@@ -7,6 +7,14 @@
     border-radius: 10px;
 }
 
+.category-container{
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+    .category-container::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
 .category-name, .product-name{
     text-transform: capitalize;
 }

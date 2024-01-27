@@ -1,9 +1,12 @@
 Vue.component('nav-bar', {
     template : `
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg px-3 bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" :href="formattedProductPage">Ecom App</a>
-                <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <a :href="formattedProductPage" class="btn btn-outline-success mx-3">Home</a>
                     <a href="/logout"><button class="btn btn-outline-danger" type="submit">Log out</button></a>
                 </div>

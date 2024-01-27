@@ -535,9 +535,9 @@ paths:
 
   /api/offers/{user_id}:
     description: >-
-      End point to get all the product page data 
+      End point to get all the offers page data 
     get:
-      description: Operation to get a product page data
+      description: Operation to get a offers page data
       parameters:
         - in: path
           name: username
@@ -561,7 +561,7 @@ paths:
         '500':
           description: Internal Server Error.
 
-  /api/search:
+  /api/search/{user_id}:
     get:
       summary: Search API
       description: Endpoint for searching based on a query parameter.
@@ -582,3 +582,115 @@ paths:
                 results:
                   - result1
                   - result2
+
+  /api/admin-approval/{user_id}:
+    description: >-
+      End point to get pending admin-approvals 
+    get:
+      description: Operation to get a pending admin-approvals
+      parameters:
+        - in: path
+          name: username
+          required: true
+          schema:
+            type: integer
+            example: 2
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                title: user object
+                type: object
+                
+        '400':
+          description: Bad request.
+        '404':
+          description: Resource not found.
+        '500':
+          description: Internal Server Error.
+
+  /api/manager-approval/{user_id}:
+    description: >-
+      End point to get pending manager-approval 
+    get:
+      description: Operation to get a pending manager-approvals
+      parameters:
+        - in: path
+          name: username
+          required: true
+          schema:
+            type: integer
+            example: 2
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                title: user object
+                type: object
+                
+        '400':
+          description: Bad request.
+        '404':
+          description: Resource not found.
+        '500':
+          description: Internal Server Error.
+
+  /api/add-caetgory-approval/{user_id}:
+    description: >-
+      End point to get pending add-caetgory-approval 
+    get:
+      description: Operation to get a pending add-caetgory-approvals
+      parameters:
+        - in: path
+          name: username
+          required: true
+          schema:
+            type: integer
+            example: 2
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                title: user object
+                type: object
+                
+        '400':
+          description: Bad request.
+        '404':
+          description: Resource not found.
+        '500':
+          description: Internal Server Error.
+  /api/edit-category-approval/{user_id}:
+    description: >-
+      End point to get pending edit-category-approval 
+    get:
+      description: Operation to get a pending edit-category-approval
+      parameters:
+        - in: path
+          name: username
+          required: true
+          schema:
+            type: integer
+            example: 2
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                title: user object
+                type: object
+                
+        '400':
+          description: Bad request.
+        '404':
+          description: Resource not found.
+        '500':
+          description: Internal Server Error.
+

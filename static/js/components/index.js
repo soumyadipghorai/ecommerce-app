@@ -5,6 +5,7 @@ Vue.component('nav-bar', {
             <a class="navbar-brand" href="/">Ecom App</a>
             <div>
                 <a :href="formattedUrl" class="btn btn-outline-success mx-3">admin-page</a>
+                <a :href="formattedManagerUrl" class="btn btn-outline-success mx-3">manager-page</a>
                 <a href="/logout"><button class="btn btn-outline-danger" type="submit">Log out</button></a>
             </div>
         </div>
@@ -12,17 +13,23 @@ Vue.component('nav-bar', {
     `,
     data() {
         return {
-            apiUrl: ''
+            apiUrl: '',  
+            managerURL : ''
         };
     },
     mounted() {
         const baseUrl = '/admin-dashboard';
+        const managerBase = '/manager-dashboard'
         const resourceId = this.$parent.$el.attributes['user-id'].value;
         this.apiUrl = `${baseUrl}/${resourceId}`;
+        this.managerURL = `${managerBase}/${resourceId}`;
     },
     computed: {
         formattedUrl() {
             return this.apiUrl;
+        }, 
+        formattedManagerUrl() {
+            return this.managerURL;
         }
     }
 });

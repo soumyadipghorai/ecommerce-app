@@ -1,30 +1,35 @@
 Vue.component('nav-bar', {
     template : `
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
         <div class="container-fluid">
             <div class="w-25 h-100">
                 <a class="navbar-brand" :href="formattedProductPage">Ecom App</a>
             </div>
-            <div class="w-75 d-flex justify-content-between align-items-center"> 
-                <form class="row ms-auto mt-3" method="POST"> 
-                    <input type="hidden" name="form_name" value="search_product"> 
-                    <div class="col-auto">
-                        <label for="inputValue" class="visually-hidden">Password</label>
-                        <input type="text" class="form-control" id="inputValue" placeholder="Search items..." name="querry">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="w-75 d-flex justify-content-between align-items-center"> 
+                    <form class="row ms-auto mt-3" method="POST"> 
+                        <input type="hidden" name="form_name" value="search_product"> 
+                        <div class="col-auto">
+                            <label for="inputValue" class="visually-hidden">Password</label>
+                            <input type="text" class="form-control" id="inputValue" placeholder="Search items..." name="querry">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-3">
+                                Search
+                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="my-0">
+                        <a :href="formattedUrl" class="btn btn-outline-success mx-3">Cart</a>
+                        <a href="/logout"><button class="btn btn-outline-danger" type="submit">Log out</button></a>
                     </div>
-                    <div class="col-auto">
-                        <button type="submit" class="btn btn-primary mb-3">
-                            Search
-                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
-                <div class="my-0">
-                    <a :href="formattedUrl" class="btn btn-outline-success mx-3">Cart</a>
-                    <a href="/logout"><button class="btn btn-outline-danger" type="submit">Log out</button></a>
                 </div>
             </div>
         </div>
@@ -65,7 +70,7 @@ Vue.component("offers", {
     template : `
     <div>
     <div class="hero-section bg-light row my-5 mx-0 shadow-sm">
-        <div class="col-sm-6 p-5">
+        <div class="col-sm-6 p-sm-4 p-md-5">
             <div class="text-section mt-5 mb-4">
                 <h2>Available products</h2>
                 <p class="description my-2">Welcome, {{name}}! Today We have the following products available for you, you can directly buy products from this page or maybe add to cart and buy every together in future.</p>

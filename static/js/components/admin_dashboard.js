@@ -1,9 +1,12 @@
 Vue.component('nav-bar', {
     template : `
-    <nav class="navbar bg-body-tertiary rounded-2">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-2 px-3">
         <div class="container-fluid">
             <a class="navbar-brand" :href="formattedUrl"><h4>Admin's, dashboard</h4></a>
-            <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <a :href="formattedSummaryPage" class="btn btn-outline-success mx-3">Summary</a>            
                 <a href="/logout"><button class="btn btn-outline-danger" type="submit">Log out</button></a>
             </div>
@@ -32,12 +35,54 @@ Vue.component('nav-bar', {
         }
     }
 });
+
+Vue.component("admin-aprroval", {
+    template : `
+    <div class="approval-section p-4 bg-light w-100 dashboard-container mt-5">
+        <h5>store manager Approval Section</h5>
+        <div class="border bg-white p-4 rounded-2" v-for="manager_id in returnManagerList">
+            <div class="row approval-card-container">
+                <div class="col-md-8 col-sm-6">
+                    {{manager_id}}
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <form action="" method = "POST">
+                        <input type="hidden" name="form_name" value="admin-approval-form">
+                        <input type="hidden" name="manager-id" :value="manager_id">
+                        <button class="btn btn-success">Approve</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    `, 
+    data(){
+        return {
+            something : '', 
+            userid : '',  
+            managerList : ''
+        }
+    }, 
+    mounted() {
+        this.userid = this.$parent.$el.attributes['user-id'].value;
+        fetch("http://127.0.0.1:8080//api/admin-approval/"+this.userid)
+        .then(response => response.json())
+        .then(data => {
+            this.managerList = data['manager_id']
+        })
+    }, 
+    computed : {
+        returnManagerList() {
+            return this.managerList;
+        }
+    }
+})
   
 Vue.component("hero-component", {
     template : `
     <div class="dashboard-container mt-5">
-    <div class="hero-data-container">
-        <div class="hero-card mx-2 rounded-2 p-3 row m-0">
+    <div class="hero-data-container row justify-content-between">
+        <div class="hero-card mx-2 rounded-2 p-3 row my-2 col-md-4">
             <div class="col-sm-9">
                 <p class="m-0" style="color: white;"><b>₹{{returnSales}}</b></p>
                 <p>Total Sales</p>
@@ -49,7 +94,7 @@ Vue.component("hero-component", {
                 </div>
             </div>
         </div>
-        <div class="hero-card mx-2 rounded-2 p-3 row m-0">
+        <div class="hero-card mx-2 rounded-2 p-3 row my-2 col-md-4">
             <div class="col-sm-9">
                 <p class="m-0" style="color: white;"><b>₹{{returnInventory}}</b></p>
                 <p>Total inventory</p>
@@ -69,7 +114,7 @@ Vue.component("hero-component", {
                 </div>
             </div>
         </div>
-        <div class="hero-card mx-2 rounded-2 p-3 row m-0">
+        <div class="hero-card mx-2 rounded-2 p-3 row my-2 col-md-3">
             <div class="col-sm-9">
                 <p class="m-0" style="color: white;"><b>{{returnItems}}</b></p>
                 <p>Total Products</p>
@@ -148,13 +193,13 @@ Vue.component("main-dashboard-body", {
                 </form>
                 <div class="poduct-container my-2 h-100" v-for="product in category">
                     <div class="available-product p-2 rounded-2 row bg-body-secondary">
-                        <div class="col-sm-5">
+                        <div class="col-sm-5 my-2">
                             <p class="m-0">{{product['product-name']}}</p>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 my-2">
                             <p class="m-0 p-2 border rounded-2 bg-white" style="color: black;">{{product['product-quantity']}}</p>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 my-2">
                             <form action="" method = "POST">
                                 <input type="hidden" name="form_name" value="product-delete-form">
                                 <input type="hidden" name="product" :value="product['product-name']">

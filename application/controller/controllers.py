@@ -5,10 +5,16 @@ import matplotlib.pyplot as plt
 from flask import current_app as app 
 from application.data.database import db
 from application.utils.discount import Discount
-from application.data.models import User, Admin, Category, Product, Order, Cart, Offers, ProductSearch
+from application.utils.create_data import create_data
+from application.data.models import User, Admin, Category, Product, Order, Cart, ManagerApproval, AdminApproval, AddCategoryApproval, EditCategoryApproval
+from application.data import data_access
+from datetime import datetime
+from main import cache 
 
 from flask_security import roles_required, login_required, current_user
 from flask import Flask, request, render_template, redirect, url_for, session
+
+from application.jobs import tasks
 
 
 all_users = [user.username for user in User.query.all()]
@@ -18,29 +24,12 @@ logger2 = logging.getLogger('file2')
 logger2.setLevel(logging.DEBUG)
 
 file_handler2 = logging.FileHandler('logs/controller.log')
-file_handler2.setLevel(logging.DEBUG) 
+file_handler2.setLevel(logging.DEBUG)  
 
 formatter = logging.Formatter('%(asctime)s [%(levelname)s] - %(message)s')
 file_handler2.setFormatter(formatter)
 
 logger2.addHandler(file_handler2)
-
-def create_data() : 
-    output = []
-    all_orders = Order.query.all()
-    for order in all_orders : 
-        output.append([
-            order.order_id, order.username, order.category, 
-            order.product_name,order.price, order.quantity,             
-            order.date, order.total_price
-            ])
-
-    data = pd.DataFrame(output, columns = [
-        'order_id', 'username', 'category', 'product_name', 
-        'price', 'quantity', 'order_date', 'total_price'
-    ])
-
-    data.to_csv('static/data/order_data.csv', encoding = 'utf-8', index = False)
 
 # user login ==> main landing page 
 @app.route('/', methods = ['GET', 'POST'])
@@ -82,13 +71,72 @@ def admin_login() :
     else : 
         return render_template('admin_login.html', message = '')
 
+@app.route('/manager-dashboard/<manager>', methods = ["GET", 'POST'])
+@login_required
+@roles_required('manager')
+def manager_dashboard(manager) : 
+    if request.method == "GET" : 
+        existing_request = AdminApproval.query.filter_by(manager_id = int(manager)).first()
+        if not existing_request :
+            new_request = AdminApproval(manager_id = int(manager), status = 1)
+            db.session.add(new_request)
+            db.session.commit() 
+        elif existing_request.status == 0 :  
+            return render_template("manager_dashboard.html", manager = manager)
+        
+        return redirect(url_for('index', user_id = manager))
+    
+    if request.method == 'POST' :
+        form_name = request.form['form_name']
+        if form_name == 'logout-form' :
+            AdminApproval.query.filter_by(manager_id = int(manager)).delete()
+            db.session.commit() 
+            return redirect(url_for('index', user_id = manager)) 
+        elif form_name == "delete-category" : 
+            category_id = request.form['category-id']  
+            Category.query.filter_by(category_id = int(category_id)).delete()
+            ManagerApproval.query.filter_by(category_id = int(category_id)).delete()
+            db.session.commit()
+            return redirect(url_for('manager_dashboard', manager = manager))
+        
+        elif form_name == "add-category" : 
+            new_category_name = request.form["category-name"]
+            peding_id = request.form["pending-id"]
+            new_category = Category(name = new_category_name)
+            db.session.add(new_category)
+
+            AddCategoryApproval.query.filter_by(id = int(peding_id)).delete()
+            db.session.commit()
+            return redirect(url_for('manager_dashboard', manager = manager))
+
+        elif form_name == "edit-category" : 
+            old_category_id = request.form["category-id"]
+            pending_id = request.form["pending-id"]
+            old_category_name = request.form["old-category-name"]
+            new_category_name = request.form["new-category-name"]
+
+            all_product_with_old_category_name = Product.query.filter_by(category = old_category_name).all()
+            for product in all_product_with_old_category_name : 
+                product.category = new_category_name
+
+            existing_category_details = Category.query.filter_by(category_id = int(old_category_id)).first()
+            existing_category_details.name = new_category_name
+
+            EditCategoryApproval.query.filter_by(id = int(pending_id)).delete()
+            db.session.commit()
+
+            return redirect(url_for('manager_dashboard', manager = manager))
 
 @app.route('/admin-dashboard/<admin>', methods = ['GET', 'POST'])
 @login_required
 @roles_required("admin")
 def admin_dashboard(admin) : 
     if request.method == 'GET' : 
-        all_category = Category.query.all()
+        
+        # all_category = Category.query.all()
+
+        all_category = data_access.get_all_category()
+
         errorCode = request.args.get('error')
         if errorCode is None : 
             message = ""
@@ -146,7 +194,12 @@ def admin_dashboard(admin) :
                 return redirect(url_for('admin_dashboard', admin = admin, error = 21))
 
             else : 
-                Category.query.filter_by(name=category_to_delete).delete()
+                # Category.query.filter_by(name=category_to_delete).delete()
+                # db.session.commit()
+                # category_details = Category.query.filter_by(name=category_to_delete).first()
+                category_details = data_access.get_all_category_by_name(category_to_delete)
+                new_request_for_manager = ManagerApproval(category_name = category_details.name, category_id = category_details.category_id)
+                db.session.add(new_request_for_manager)
                 db.session.commit()
                 return redirect(url_for('admin_dashboard', admin = admin))
 
@@ -160,14 +213,22 @@ def admin_dashboard(admin) :
                 return redirect(url_for('admin_dashboard', admin = admin, error = 23))
             else : 
                 old_category_name = category_availability_check.name
-                all_product_with_old_category_name = Product.query.filter_by(category = old_category_name).all()
-                for product in all_product_with_old_category_name : 
-                    product.category = new_category_name
                 
-                category_availability_check.name = new_category_name
+                new_edit_request = EditCategoryApproval(old_name = old_category_name, new_name = new_category_name, category_id = category_availability_check.category_id)
+                db.session.add(new_edit_request)
                 db.session.commit()
+
                 return redirect(url_for('admin_dashboard', admin = admin)) 
-                 
+            
+        elif form_name == 'admin-approval-form' : 
+            manager_id = request.form['manager-id']
+
+            manager_to_approve = AdminApproval.query.filter_by(manager_id = int(manager_id)).first()
+            manager_to_approve.status = 0
+
+            db.session.add(manager_to_approve)
+            db.session.commit()
+            return redirect(url_for('admin_dashboard', admin = admin))
  
         elif form_name == "product-delete-form" :
             product_to_delete = request.form['product']
@@ -190,7 +251,8 @@ def admin_dashboard(admin) :
 @roles_required("admin")
 def dash_board(admin) : 
     if request.method == 'GET' : 
-        all_order = Order.query.all()
+        # all_order = Order.query.all()
+        all_order = data_access.get_all_order()
         category_wise_sale = {}
 
         for order in all_order : 
@@ -199,7 +261,9 @@ def dash_board(admin) :
             else : 
                 category_wise_sale[order.category] += order.total_price
 
-        all_category_value = Category.query.all()
+        # all_category_value = Category.query.all()
+
+        all_category_value = data_access.get_all_category()
         all_category = {}
 
         for category in all_category_value :
@@ -233,7 +297,9 @@ def dash_board(admin) :
         plt.ylabel("Total value")
         plt.title("Categoy wise total Stock price")
         plt.savefig('static/images/category-wise-stock.png')
-        create_data()
+        
+        job = tasks.create_summary_data_job.delay()
+        result = job.wait()
 
         return render_template('dashbord.html', admin = admin)
 
@@ -256,7 +322,9 @@ def product_page(username) :
 
         # filter products 
         category_product_maping = {}
-        all_category = Category.query.all()
+        # all_category = Category.query.all()
+
+        all_category = data_access.get_all_category()
         for category in all_category : 
             category_product_maping[category.name.strip()] = []
             all_product = Product.query.filter_by(category = category.name).all()
@@ -267,7 +335,8 @@ def product_page(username) :
                     'quantity' : product.quantity})
 
 
-        all_offer = Offers.query.all()
+        # all_offer = Offers.query.all()
+        all_offer = data_access.get_all_offer()
         offer_product = []
         logger2.info(str(all_offer))
         for offer in all_offer :
@@ -329,8 +398,11 @@ def add_category(admin) :
 
             print(url_for('add_category', admin = admin))
             if not existing_category : 
-                new_category = Category(name = category_name)
-                db.session.add(new_category)
+                # new_category = Category(name = category_name)
+                # db.session.add(new_category)
+                # db.session.commit()
+                new_category_request = AddCategoryApproval(category_name = category_name)
+                db.session.add(new_category_request)
                 db.session.commit()
 
                 return redirect(url_for('add_category', admin = admin, message = 'category added'))
@@ -399,7 +471,8 @@ def buy_product(username) :
         product_name = request.args.get('product-name')
         print(product_name)
 
-        product_details = Product.query.filter_by(name = product_name.strip()).first()
+        # product_details = Product.query.filter_by(name = product_name.strip()).first()
+        product_details = data_access.get_all_product_by_product_name(product_name)
 
         product_quantity = product_details.quantity 
 
@@ -413,7 +486,8 @@ def buy_product(username) :
         if form_name == 'buy-product' : 
             try : 
                 product_name = request.args.get('product-name')
-                product_details = Product.query.filter_by(name = product_name).first()
+                # product_details = Product.query.filter_by(name = product_name).first()
+                product_details = data_access.get_all_product_by_product_name(product_name)
 
                 quantity_ordered = request.form['quantity']
 
@@ -434,7 +508,8 @@ def buy_product(username) :
 
                 db.session.add(new_order)
 
-                old_product = Product.query.filter_by(name = product_name, category = order_category).first()
+                # old_product = Product.query.filter_by(name = product_name, category = order_category).first()
+                old_product = data_access.get_all_product_by_productname_category(product_name, order_category)
 
                 print(old_product)
                 old_product.quantity -= int(order_quantity)
@@ -459,8 +534,11 @@ def cart_page(username) :
         list_of_items, total_price = [], 0
 
         for record in all_products : 
+            print(record.product_name)
 
             product_details = Product.query.filter_by(name = record.product_name.strip()).first()
+
+            # product_details = data_access.get_all_product_by_product_name(record.product_name)
             print(product_details)
 
             list_of_items.append({
@@ -500,13 +578,15 @@ def cart_page(username) :
 
             all_products = Cart.query.filter_by(username = username).all()
 
+            print(all_products)
             list_of_items, total_price = [], 0
 
             # add all the records to the order table only if the product is available and buy quantity > 0 
             for record in all_products : 
-
+                print(record)
                 product_details = Product.query.filter_by(name = record.product_name.strip()).first()
-                
+                # product_details = data_access.get_all_product_by_product_name(record.product_name)
+                print(record, product_details)
                 if min(int(record.quantity), int(product_details.quantity)) > 0 :
                     new_order = Order(
                         username = username, category = product_details.category, 
@@ -559,3 +639,10 @@ def search(username) :
             return redirect(url_for('search', q = query, username = username))
     else : 
         return render_template('error.html')
+    
+@app.route("/hello/<username>", methods = ["GET", "POST"])
+def hello(username) :  
+    job = tasks.test_html_report_sender.delay()
+    result = job.wait()
+
+    return str(result), 200 

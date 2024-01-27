@@ -89,3 +89,47 @@ order_id,username,category,product_name,price,quantity,order_date,total_price
 88,6,cake,chocolate cake ,100,3,2023-12-16,300
 89,6,cake,belgium chocolate cake,56,95,2023-12-17,5320
 90,6,Non veg,Fish,75,1,2023-12-20,75
+91,6,Fruit,lichi,100,1,2024-01-24,100
+92,6,cake,chocolate cake,100,1,2024-01-25,100
+93,6,Fruit,apple ,50,2,2024-01-25,100
+94,6,cake,chocolate cake ,100,1,2024-01-25,100
+95,6,Fruit,lemon ,10,1,2024-01-25,10
+96,6,cake,pastry ,68,1,2024-01-25,68
+97,6,Fruit,lichi ,100,1,2024-01-25,100
+98,6,Non veg,Fish ,75,1,2024-01-25,75
+99,8,cake,pastry,68,1,2024-01-25,68
+100,8,Fruit,mango,56,1,2024-01-25,56
+101,8,Fruit,mango ,56,1,2024-01-25,56
+102,8,cake,chocolate cake ,100,1,2024-01-25,100
+103,8,cookies,burbon ,50,1,2024-01-25,50
+104,6,cake,pastry,68,1,2024-01-25,68
+105,6,cake,chocolate cake ,100,1,2024-01-25,100
+106,6,Non veg,Fish ,75,1,2024-01-25,75
+107,6,cake,chocolate cake,100,1,2024-01-25,100
+108,6,Fruit,mango ,56,1,2024-01-25,56
+109,6,Non veg,Fish ,75,1,2024-01-25,75
+110,8,Fruit,apple,50,1,2024-01-25,50
+111,8,cake,pastry ,68,1,2024-01-25,68
+112,8,non veg,Fish ,75,1,2024-01-25,75
+113,8,Fruit,lichi ,100,1,2024-01-25,100
+114,8,Fruit,mango ,56,1,2024-01-25,56
+115,8,Fruit,lichi ,100,1,2024-01-25,100
+116,8,Fruit,lichi ,100,1,2024-01-25,100
+117,8,non veg,Fish ,75,1,2024-01-25,75
+118,8,Fruit,lichi ,100,1,2024-01-25,100
+119,8,non veg,Fish ,75,1,2024-01-25,75
+120,6,Fruit,lemon,10,1,2024-01-25,10
+121,6,Fruit,lemon ,10,1,2024-01-25,10
+122,6,cake,chocolate cake ,100,1,2024-01-25,100
+123,6,bread,pound bread,30,1,2024-01-25,30
+124,7,bread,pound bread,30,1,2024-01-25,30
+125,7,non veg,Fish ,75,1,2024-01-25,75
+126,7,cake,chocolate cake ,100,1,2024-01-25,100
+127,6,bread,pound bread,30,1,2024-01-25,30
+128,6,cake,belgium chocolate cake ,75,1,2024-01-25,75
+129,6,non veg,Fish ,75,1,2024-01-25,75
+130,6,Fruit,apple ,50,1,2024-01-25,50
+131,6,cake,pastry ,68,1,2024-01-25,68
+132,6,bread,pound bread,30,1,2024-01-25,30
+133,6,non veg,Fish ,75,1,2024-01-25,75
+134,6,non veg,Fish ,75,1,2024-01-25,75
